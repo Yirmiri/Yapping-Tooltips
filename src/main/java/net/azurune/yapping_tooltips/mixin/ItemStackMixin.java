@@ -39,7 +39,7 @@ public abstract class ItemStackMixin {
 								.formatted(Formatting.GOLD)).formatted(Formatting.GRAY));
 			}
 		}
-		if (!YappingTooltips.isModLoaded("stained-lenses")) { //removes spyglass tooltip if Stained Lenses is installed to prevent double tooltips
+		if (!YappingTooltips.isModLoaded("stained-lenses") && stack.isOf(Items.SPYGLASS)) { //removes spyglass tooltip if Stained Lenses is installed to prevent double tooltips
 			tooltip.add(Text.translatable("yapping_tooltips.item.minecraft.spyglass.desc").formatted(Formatting.GRAY));
 		}
 	}
