@@ -2,10 +2,13 @@ package net.azurune.yapping_tooltips.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
+import net.minecraft.registry.RegistryWrapper;
+
+import java.util.concurrent.CompletableFuture;
 
 public class YTLangProvider extends FabricLanguageProvider {
-    public YTLangProvider(FabricDataOutput dataGenerator) {
-        super(dataGenerator, "en_us");
+    public YTLangProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+        super(dataOutput, registryLookup);
     }
 
     //ID
@@ -15,10 +18,9 @@ public class YTLangProvider extends FabricLanguageProvider {
     public static final String AC_ID = "arts_and_crafts.";
     public static final String SP_ID = "snowpig.";
     public static final String EB_ID = "excessive_building.";
-    
-    @Override
-    public void generateTranslations(TranslationBuilder desc) {
 
+    @Override
+    public void generateTranslations(RegistryWrapper.WrapperLookup lookup, TranslationBuilder desc) {
         desc.add(YT_ID + "more_information", "[%s] to show tooltip");
 
         desc.add(YT_ID + "block." + ID + "oak_log.desc", "A sturdy log from an oak tree");
