@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "yapping_tooltips",
+	"version": "${version}",
+	"name": "Yapping Tooltips",
+	"description": "A small client side mod that adds tooltips to every item",
+	"authors": [
+		"Yirmiri"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/yapping-tooltips",
+		"sources": "https://github.com/Yirmiri/Yapping-Tooltips"
+	},
+	"license": "All Rights Reserved",
+	"icon": "icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.azurune.yapping_tooltips.YappingTooltips"
+		],
+		"fabric-datagen": [
+			"net.azurune.yapping_tooltips.YappingTooltipsDataGenerator"
+		]
+	},
+	"mixins": [
+		"yapping_tooltips.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "tooltipfix"
+	}
+}
