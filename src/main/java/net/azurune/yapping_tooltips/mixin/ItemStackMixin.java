@@ -38,8 +38,15 @@ public abstract class ItemStackMixin {
 								.formatted(Formatting.GOLD)).formatted(Formatting.GRAY));
 			}
 		}
-		if (!YappingTooltips.isModLoaded("stained-lenses") && stack.isOf(Items.SPYGLASS)) { //removes spyglass tooltip if Stained Lenses is installed to prevent double tooltips
-			tooltip.add(Text.translatable("yapping_tooltips.item.minecraft.spyglass.desc").formatted(Formatting.GRAY));
+
+		if (!YappingTooltips.isModLoaded("stained-lenses") && stack.isOf(Items.SPYGLASS)) {
+			if (InputUtil.isKeyPressed(MinecraftClient.getInstance().getWindow().getHandle(), ((IKeybindingMixin) MinecraftClient.getInstance().options.sneakKey).getBoundKey().getCode())) {
+				tooltip.add(Text.translatable("yapping_tooltips.item.minecraft.spyglass.desc").formatted(Formatting.GRAY));
+			} else {
+				tooltip.add(Text.translatable("yapping_tooltips.more_information",
+						Text.translatable(MinecraftClient.getInstance().options.sneakKey.getBoundKeyTranslationKey())
+								.formatted(Formatting.GOLD)).formatted(Formatting.GRAY));
+			}
 		}
 	}
 }

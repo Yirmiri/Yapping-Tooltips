@@ -11,7 +11,7 @@ public class YTLangProvider extends FabricLanguageProvider {
         super(dataOutput, registryLookup);
     }
 
-    //ID
+    //IDENTIFIERS
     public static final String YT_ID = "yapping_tooltips.";
     public static final String ID = "minecraft.";
 
@@ -23,6 +23,92 @@ public class YTLangProvider extends FabricLanguageProvider {
     public void generateTranslations(RegistryWrapper.WrapperLookup lookup, TranslationBuilder desc) {
         desc.add(YT_ID + "more_information", "[%s] to show tooltip");
 
+        //1.21 UPDATE
+        desc.add(YT_ID + "block." + ID + "tuff_stairs.desc", "Tough stairs constructed from tuff");
+        desc.add(YT_ID + "block." + ID + "tuff_slab.desc", "Tough slab constructed from tuff");
+        desc.add(YT_ID + "block." + ID + "tuff_wall.desc", "A tough wall that can connect to other walls, too high to jump over");
+
+        desc.add(YT_ID + "block." + ID + "chiseled_tuff.desc", "Tuff that has been finely chiseled");
+
+        desc.add(YT_ID + "block." + ID + "polished_tuff.desc", "A block of tuff that has been polished");
+        desc.add(YT_ID + "block." + ID + "polished_tuff_stairs.desc", "Smooth stairs constructed from polished tuff");
+        desc.add(YT_ID + "block." + ID + "polished_tuff_slab.desc", "Smooth slabs constructed from polished tuff");
+        desc.add(YT_ID + "block." + ID + "polished_tuff_wall.desc", "A smooth wall that can connect to other walls, too high to jump over");
+
+        desc.add(YT_ID + "block." + ID + "tuff_bricks.desc", "Tuff compacted into bricks");
+        desc.add(YT_ID + "block." + ID + "tuff_brick_stairs.desc", "Tough stairs constructed from tuff bricks");
+        desc.add(YT_ID + "block." + ID + "tuff_brick_slab.desc", "Tough slabs constructed from tuff bricks");
+        desc.add(YT_ID + "block." + ID + "tuff_brick_wall.desc", "A tough wall that can connect to other walls, too high to jump over");
+        desc.add(YT_ID + "block." + ID + "chiseled_tuff_bricks.desc", "Tuff bricks that has been finely chiseled");
+
+        desc.add(YT_ID + "block." + ID + "chiseled_copper.desc", "A copper block that has been finely chiseled");
+        desc.add(YT_ID + "block." + ID + "exposed_chiseled_copper.desc", "A slightly oxidized copper block that has been finely chiseled");
+        desc.add(YT_ID + "block." + ID + "weathered_chiseled_copper.desc", "An oxidized copper block that has been finely chiseled");
+        desc.add(YT_ID + "block." + ID + "oxidized_chiseled_copper.desc", "A fully oxidized copper block that has been finely chiseled");
+        desc.add(YT_ID + "block." + ID + "waxed_chiseled_copper.desc", "A copper block that has been finely chiseled");
+        desc.add(YT_ID + "block." + ID + "waxed_exposed_chiseled_copper.desc", "A slightly oxidized copper block that has been finely chiseled");
+        desc.add(YT_ID + "block." + ID + "waxed_weathered_chiseled_copper.desc", "An oxidized copper block that has been finely chiseled");
+        desc.add(YT_ID + "block." + ID + "waxed_oxidized_chiseled_copper.desc", "A fully oxidized copper block that has been finely chiseled");
+
+        desc.add(YT_ID + "block." + ID + "copper_grate.desc", "A copper block that has been chiseled, can be waterlogged");
+        desc.add(YT_ID + "block." + ID + "exposed_copper_grate.desc", "A slightly oxidized copper block that has been chiseled, can be waterlogged");
+        desc.add(YT_ID + "block." + ID + "weathered_copper_grate.desc", "An oxidized copper block that has been chiseled, can be waterlogged");
+        desc.add(YT_ID + "block." + ID + "oxidized_copper_grate.desc", "A fully oxidized copper block that has been chiseled, can be waterlogged");
+        desc.add(YT_ID + "block." + ID + "waxed_copper_grate.desc", "A copper block that has been chiseled, can be waterlogged");
+        desc.add(YT_ID + "block." + ID + "waxed_exposed_copper_grate.desc", "A slightly oxidized copper block that has been chiseled, can be waterlogged");
+        desc.add(YT_ID + "block." + ID + "waxed_weathered_copper_grate.desc", "An oxidized copper block that has been chiseled, can be waterlogged");
+        desc.add(YT_ID + "block." + ID + "waxed_oxidized_copper_grate.desc", "A fully oxidized copper block that has been chiseled, can be waterlogged");
+
+        desc.add(YT_ID + "block." + ID + "copper_bulb.desc", "A bulb that can be toggled with a redstone signal");
+        desc.add(YT_ID + "block." + ID + "exposed_copper_bulb.desc", "A slightly oxidized bulb that can be toggled with a redstone signal");
+        desc.add(YT_ID + "block." + ID + "weathered_copper_bulb.desc", "An oxidized bulb that can be toggled with a redstone signal");
+        desc.add(YT_ID + "block." + ID + "oxidized_copper_bulb.desc", "A fully oxidized bulb that can be toggled with a redstone signal");
+        desc.add(YT_ID + "block." + ID + "waxed_copper_bulb.desc", "A bulb that can be toggled with a redstone signal");
+        desc.add(YT_ID + "block." + ID + "waxed_exposed_copper_bulb.desc", "A slightly oxidized bulb that can be toggled with a redstone signal");
+        desc.add(YT_ID + "block." + ID + "waxed_weathered_copper_bulb.desc", "An oxidized bulb that can be toggled with a redstone signal");
+        desc.add(YT_ID + "block." + ID + "waxed_oxidized_copper_bulb.desc", "A fully oxidized bulb that can be toggled with a redstone signal");
+
+        desc.add(YT_ID + "block." + ID + "copper_door.desc", "A copper door which can be opened");
+        desc.add(YT_ID + "block." + ID + "exposed_copper_door.desc", "A slightly oxidized copper door which can be opened");
+        desc.add(YT_ID + "block." + ID + "weathered_copper_door.desc", "An oxidized copper door which can be opened");
+        desc.add(YT_ID + "block." + ID + "oxidized_copper_door.desc", "A fully oxidized copper door which can be opened");
+        desc.add(YT_ID + "block." + ID + "waxed_copper_door.desc", "A copper door which can be opened");
+        desc.add(YT_ID + "block." + ID + "waxed_exposed_copper_door.desc", "A slightly oxidized copper door which can be opened");
+        desc.add(YT_ID + "block." + ID + "waxed_weathered_copper_door.desc", "An oxidized copper door which can be opened");
+        desc.add(YT_ID + "block." + ID + "waxed_oxidized_copper_door.desc", "A fully oxidized copper door which can be opened");
+
+        desc.add(YT_ID + "block." + ID + "copper_trapdoor.desc", "Commonly used for everything BUT traps");
+        desc.add(YT_ID + "block." + ID + "exposed_copper_trapdoor.desc", "Commonly used for everything BUT traps");
+        desc.add(YT_ID + "block." + ID + "weathered_copper_trapdoor.desc", "Commonly used for everything BUT traps");
+        desc.add(YT_ID + "block." + ID + "oxidized_copper_trapdoor.desc", "Commonly used for everything BUT traps");
+        desc.add(YT_ID + "block." + ID + "waxed_copper_trapdoor.desc", "Commonly used for everything BUT traps");
+        desc.add(YT_ID + "block." + ID + "waxed_exposed_copper_trapdoor.desc", "Commonly used for everything BUT traps");
+        desc.add(YT_ID + "block." + ID + "waxed_weathered_copper_trapdoor.desc", "Commonly used for everything BUT traps");
+        desc.add(YT_ID + "block." + ID + "waxed_oxidized_copper_trapdoor.desc", "Commonly used for everything BUT traps");
+
+        desc.add(YT_ID + "item." + ID + "mace.desc", "A heavy weapon that increases damage the farther the user falls");
+        desc.add(YT_ID + "item." + ID + "wolf_armor.desc", "Grants immunity to almost all damage sources while equipped");
+        desc.add(YT_ID + "item." + ID + "wind_charge.desc", "Can be thrown to blast entities near it's landing spot");
+        desc.add(YT_ID + "item." + ID + "ominous_bottle.desc", "A mysterious bottle that when drank inflicts bad omen to the consumer");
+        desc.add(YT_ID + "item." + ID + "breeze_rod.desc", "A windy rod from a breeze, cool to the touch...");
+        desc.add(YT_ID + "block." + ID + "heavy_core.desc", "A weighty block that can be combined with a breeze rod to create a mace");
+        desc.add(YT_ID + "item." + ID + "armadillo_scute.desc", "A hard plate from an armadillo");
+
+        desc.add(YT_ID + "item." + ID + "trial_key.desc", "A reward from a trial chamber, can open a vault");
+        desc.add(YT_ID + "item." + ID + "ominous_trial_key.desc", "A reward from an ominous trial chamber event, can open an ominous vault");
+        desc.add(YT_ID + "block." + ID + "trial_spawner.desc", "A metallic block that summons a wave of whatever is inside of it, grants rewards when cleared");
+        desc.add(YT_ID + "block." + ID + "vault.desc", "A metallic block that can be opened with a key for rewards");
+        desc.add(YT_ID + "block." + ID + "crafter.desc", "Can craft items automatically when powered by redstone, spits out the output");
+
+        desc.add(YT_ID + "item." + ID + "armadillo_spawn_egg.desc", "A small animal that curls up when scared, can be brushed for it's scutes");
+        desc.add(YT_ID + "item." + ID + "bogged_spawn_egg.desc", "A poised skeleton that fires poisonous arrows at it's target");
+        desc.add(YT_ID + "item." + ID + "breeze_spawn_egg.desc", "An air elemental that shoots balls of wind");
+
+        desc.add(YT_ID + "item." + ID + "flow_pottery_sherd.desc", "A ceramic remnant with a breeze flow painted on it");
+        desc.add(YT_ID + "item." + ID + "guster_pottery_sherd.desc", "A ceramic remnant with a breeze gust painted on it");
+        desc.add(YT_ID + "item." + ID + "scrape_pottery_sherd.desc", "A ceramic remnant with an axe painted on it");
+
+        //INITIAL UPDATE (1.0-1.21)
         desc.add(YT_ID + "block." + ID + "oak_log.desc", "A sturdy log from an oak tree");
         desc.add(YT_ID + "block." + ID + "oak_wood.desc", "A sturdy piece of wood from an oak log");
         desc.add(YT_ID + "block." + ID + "stripped_oak_log.desc", "An oak log that has been stripped- by accident?");
@@ -732,7 +818,7 @@ public class YTLangProvider extends FabricLanguageProvider {
         desc.add(YT_ID + "block." + ID + "red_mushroom.desc", "Eat too many and you will become big!");
         desc.add(YT_ID + "block." + ID + "crimson_fungus.desc", "A hoglin's favorite snack!");
         desc.add(YT_ID + "block." + ID + "warped_fungus.desc", "Smells so bad hoglins run away");
-        desc.add(YT_ID + "block." + ID + "grass.desc", "A common plant that covers most ground");
+        desc.add(YT_ID + "block." + ID + "short_grass.desc", "A common plant that covers most ground");
         desc.add(YT_ID + "block." + ID + "fern.desc", "Cannot flower to propagate but instead reproduce through spores");
         desc.add(YT_ID + "block." + ID + "dead_bush.desc", "Not to be confused with shrub");
         desc.add(YT_ID + "block." + ID + "dandelion.desc", "A yellow flower that populates majority of the Overworld");
@@ -1207,7 +1293,7 @@ public class YTLangProvider extends FabricLanguageProvider {
         desc.add(YT_ID + "item." + ID + "honeycomb.desc", "A sweet comb filled with honey");
         desc.add(YT_ID + "item." + ID + "ink_sac.desc", "Can be used to dye things black");
         desc.add(YT_ID + "item." + ID + "glow_ink_sac.desc", "Glow and Behold!");
-        desc.add(YT_ID + "item." + ID + "scute.desc", "A hard plate from a turtle");
+        desc.add(YT_ID + "item." + ID + "turtle_scute.desc", "A hard plate from a turtle");
         desc.add(YT_ID + "item." + ID + "slime_ball.desc", "A gross ball that sticks to your fingers");
         desc.add(YT_ID + "item." + ID + "clay_ball.desc", "Can be heated into a brick");
         desc.add(YT_ID + "item." + ID + "prismarine_shard.desc", "A sharp remnant of a stone");
