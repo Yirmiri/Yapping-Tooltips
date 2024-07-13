@@ -30,7 +30,7 @@ public abstract class ItemStackMixin {
 	private void getTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type, CallbackInfo ci) {
 		if (TranslationStorage.getInstance().hasTranslation(YappingTooltips.MOD_ID + "." + this.getTranslationKey() + ".desc") && !stack.isOf(Items.SPYGLASS)) {
 			if (InputUtil.isKeyPressed(MinecraftClient.getInstance().getWindow().getHandle(),
-					((IKeybindingMixin) MinecraftClient.getInstance().options.sneakKey).getBoundKey().getCode())) {
+					((IKeybindingMixin) MinecraftClient.getInstance().options.sneakKey).getBoundKey().getCode()) || !YappingTooltips.CONFIG.enableShiftToShowTooltips()) {
 				tooltip.add(Text.translatable(YappingTooltips.MOD_ID + "." + this.getTranslationKey() + ".desc").formatted(Formatting.GRAY));
 			} else {
 				tooltip.add(Text.translatable("yapping_tooltips.more_information",
@@ -50,4 +50,3 @@ public abstract class ItemStackMixin {
 		}
 	}
 }
-//TODO: Add configs for colors and shift key
