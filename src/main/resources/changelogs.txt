@@ -4,6 +4,26 @@ Literally just a secret .txt file of every single update's changelog
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Version Release v1.0.2 (Fabric/Quilt: 1.20.1/1.21)
+Small Update
+
+  Additions
+•   Added the shiftToShowTooltip configuration option (default true, whether it is required to hold shift to display tooltips)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Version Release v1.0.1 (Fabric/Quilt: 1.21)
+Release Update
+
+  Additions
+•   Ported to 1.21
+•   Added 1.21 item tooltips
+
+  Bug Fixes
+•   Fixed spyglass displaying tooltip even when not holding shift
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Version Release v1.0.0 (Fabric/Quilt: 1.20.1)
 Release Update
 
