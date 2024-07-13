@@ -34,19 +34,6 @@ public abstract class YTEntry<T> {
         };
     }
 
-    public static YTEntry<Integer> integerEntry(String name, Supplier<Integer> current, Consumer<Integer> saver, Integer defaultValue, Integer min, Integer max, String... tooltip) {
-        return new YTEntry<>(name, current, saver, defaultValue, min, max, tooltip) {
-            @Override
-            TooltipListEntry<Integer> build(ConfigEntryBuilder builder) {
-                return builder.startIntField(Text.translatable(getText()), getCurrent().get())
-                        .setSaveConsumer(getSaver())
-                        .setTooltip(Arrays.stream(getTooltip()).map(Text::literal).toArray(Text[]::new))
-                        .setDefaultValue(getDefaultValue()).setMin(getMin()).setMax(getMax())
-                        .build();
-            }
-        };
-    }
-
     private YTEntry(String name, Supplier<T> current, Consumer<T> saver, T defaultValue, String... tooltip) {
         this(name, current, saver, defaultValue, null, null, tooltip);
     }
