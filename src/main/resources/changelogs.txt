@@ -4,6 +4,21 @@ Literally just a secret .txt file of every single update's changelog
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Version Release v1.1.0 (Fabric/Quilt: 1.20.1/1.21)
+Small Update
+
+  Additions
+•   Added contributor capes
+
+  Changes
+•   Changed the iron block tooltip
+
+  Bug Fixes
+•   Fixed spyglasses still requiring to hold shift even if the shiftToShowTooltip is disabled
+•   Fixed an issue with the Arts & Crafts red paintbrush's tooltip
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Version Release v1.0.2 (Fabric/Quilt: 1.20.1/1.21)
 Small Update
 

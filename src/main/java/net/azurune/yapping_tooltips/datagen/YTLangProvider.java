@@ -1478,11 +1478,6 @@ public class YTLangProvider extends FabricLanguageProvider {
         desc.add(YT_ID + "block." + ID + "light.desc", "An invisible block that glows");
         desc.add(YT_ID + "block." + ID + "petrified_oak_slab.desc", "A remnant of the past...");
 
-        desc.add(YT_ID + "item." + AC_ID + "red_paintbrush.desc", "§4...so pick up your brush, and paint\n§4the world\n§4§lRED");
-
-        desc.add(YT_ID + "item." + SP_ID + "frozen_porkchop.desc", "A frigid porkchop that freezes the consumer");
-        desc.add(YT_ID + "item." + SP_ID + "snow_pig_spawn_egg.desc", "A pig that has been frozen by powdered snow");
-
         desc.add(YT_ID + "item." + EB_ID + "royalty_pottery_sherd.desc", "Fit for a queen!");
         desc.add(YT_ID + "item." + EB_ID + "ancient_pottery_sherd.desc", "Suffering leaves, suffering leaves");
         desc.add(YT_ID + "item." + EB_ID + "bitter_pottery_sherd.desc", "A mixture of dried spices- oh wait it's just paint...");
@@ -1506,5 +1501,10 @@ public class YTLangProvider extends FabricLanguageProvider {
         desc.add(YT_ID + "item." + EB_ID + "is_that_pottery_sherd.desc", ":)");
         desc.add(YT_ID + "item." + EB_ID + "kokos_bug_pottery_sherd.desc", "A ceramic remnant with a KOKOS BUG painted on it");
         desc.add(YT_ID + "item." + EB_ID + "suspicious_pottery_sherd.desc", "A ceramic remnant... that seems a bit suspicious");
+
+        desc.add(YT_ID + "item." + AC_ID + "red_paintbrush.desc", "§4...so pick up your brush, and paint §4the world §4§lRED");
+
+        desc.add(YT_ID + "item." + SP_ID + "frozen_porkchop.desc", "A frigid porkchop that freezes the consumer");
+        desc.add(YT_ID + "item." + SP_ID + "snow_pig_spawn_egg.desc", "A pig that has been frozen by powdered snow");
     }
 }

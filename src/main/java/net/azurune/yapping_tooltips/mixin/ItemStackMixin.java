@@ -28,7 +28,7 @@ public abstract class ItemStackMixin {
 
 	@Inject(at = @At("HEAD"), method = "appendTooltip")
 	private void getTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type, CallbackInfo ci) {
-		if (TranslationStorage.getInstance().hasTranslation(YappingTooltips.MOD_ID + "." + this.getTranslationKey() + ".desc") && !stack.isOf(Items.SPYGLASS)) {
+		if (TranslationStorage.getInstance().hasTranslation(YappingTooltips.MOD_ID + "." + this.getTranslationKey() + ".desc") && !stack.isOf(Items.SPYGLASS) && !YappingTooltips.CONFIG.enableDisplayUntranslatedTooltips()) {
 			if (InputUtil.isKeyPressed(MinecraftClient.getInstance().getWindow().getHandle(),
 					((IKeybindingMixin) MinecraftClient.getInstance().options.sneakKey).getBoundKey().getCode()) || !YappingTooltips.CONFIG.enableShiftToShowTooltips()) {
 				tooltip.add(Text.translatable(YappingTooltips.MOD_ID + "." + this.getTranslationKey() + ".desc").formatted(Formatting.GRAY));
@@ -42,7 +42,7 @@ public abstract class ItemStackMixin {
 		if (!YappingTooltips.isModLoaded("stained-lenses") && stack.isOf(Items.SPYGLASS)) {
 			if (InputUtil.isKeyPressed(MinecraftClient.getInstance().getWindow().getHandle(), ((IKeybindingMixin) MinecraftClient.getInstance().options.sneakKey).getBoundKey().getCode())) {
 				tooltip.add(Text.translatable("yapping_tooltips.item.minecraft.spyglass.desc").formatted(Formatting.GRAY));
-			} else {
+			} else if (YappingTooltips.CONFIG.enableShiftToShowTooltips()) {
 				tooltip.add(Text.translatable("yapping_tooltips.more_information",
 						Text.translatable(MinecraftClient.getInstance().options.sneakKey.getBoundKeyTranslationKey())
 								.formatted(Formatting.GOLD)).formatted(Formatting.GRAY));
