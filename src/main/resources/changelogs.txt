@@ -8,7 +8,6 @@ Version Release v1.1.0 (Fabric/Quilt: 1.20.1/1.21)
 Small Update
 
   Additions
-•   Added displayUntranslatedTooltips configuration option (default false, whether tooltips with no translations should show, only useful for developers)
 •   Added contributor capes
 
   Changes
