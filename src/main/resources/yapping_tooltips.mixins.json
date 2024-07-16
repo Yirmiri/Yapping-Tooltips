@@ -5,8 +5,9 @@
   "mixins": [
   ],
   "client": [
+    "IKeybindingMixin",
     "ItemStackMixin",
-    "IKeybindingMixin"
+    "PlayerListEntryMixin"
   ],
   "injectors": {
     "defaultRequire": 1

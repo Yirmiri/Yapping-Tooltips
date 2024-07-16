@@ -9,7 +9,10 @@ public enum YTCategory {
 
     CLIENT("config.yapping_tooltips.category.client", false,
             YTEntry.booleanEntry("config.yapping_tooltips.enable_shift_to_show", () -> YappingTooltips.CONFIG.enableShiftToShowTooltips(),
-                    newValue -> YappingTooltips.CONFIG.setShiftToShowTooltips(newValue), false));
+                    newValue -> YappingTooltips.CONFIG.setShiftToShowTooltips(newValue), false),
+
+            YTEntry.booleanEntry("config.yapping_tooltips.enable_untranslated_tooltips", () -> YappingTooltips.CONFIG.enableDisplayUntranslatedTooltips(),
+                    newValue -> YappingTooltips.CONFIG.setDisplayUntranslatedTooltips(newValue), false));
 
     private final String text;
     private final YTEntry<?>[] entries;

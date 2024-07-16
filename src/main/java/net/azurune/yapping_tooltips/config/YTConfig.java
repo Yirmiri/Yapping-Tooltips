@@ -15,6 +15,7 @@ public class YTConfig {
     private static final File CONFIG_FILE = new File(FabricLoader.getInstance().getConfigDir().toFile(), "yapping_tooltips.json");
 
     private boolean shiftToShowTooltips = true;
+    private boolean displayUntranslatedTooltips = false;
 
     public YTConfig() {
     }
@@ -54,5 +55,13 @@ public class YTConfig {
 
     public boolean setShiftToShowTooltips(boolean bool) {
         return shiftToShowTooltips = bool;
+    }
+
+    public boolean enableDisplayUntranslatedTooltips() {
+        return displayUntranslatedTooltips;
+    }
+
+    public boolean setDisplayUntranslatedTooltips(boolean bool) {
+        return displayUntranslatedTooltips = bool;
     }
 }

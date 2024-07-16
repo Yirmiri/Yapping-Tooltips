@@ -4,6 +4,18 @@ Literally just a secret .txt file of every single update's changelog
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Version Release v1.1.0 (Fabric/Quilt: 1.21)
+Small Update
+
+  Additions
+•   Added displayUntranslatedTooltips configuration option (default false, whether tooltips with no translations should show, only useful for developers)
+•   Added contributor capes
+
+  Bug Fixes
+•   Fixed spyglasses still requiring to hold shift even if the shiftToShowTooltip is disabled
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Version Release v1.0.2 (Fabric/Quilt: 1.20.1/1.21)
 Small Update
 
