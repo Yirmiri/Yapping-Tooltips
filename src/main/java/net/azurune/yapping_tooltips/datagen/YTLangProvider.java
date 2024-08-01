@@ -23,6 +23,8 @@ public class YTLangProvider extends FabricLanguageProvider {
     public void generateTranslations(RegistryWrapper.WrapperLookup lookup, TranslationBuilder desc) {
         desc.add(YT_ID + "more_information", "[%s] to show tooltip");
 
+        //TODO: MORE TRIMS
+
         //1.21 UPDATE
         desc.add(YT_ID + "block." + ID + "tuff_stairs.desc", "Tough stairs constructed from tuff");
         desc.add(YT_ID + "block." + ID + "tuff_slab.desc", "Tough slab constructed from tuff");
@@ -1500,7 +1502,7 @@ public class YTLangProvider extends FabricLanguageProvider {
         desc.add(YT_ID + "item." + EB_ID + "wrathful_pottery_sherd.desc", "A ceramic remnant with an ancient evil painted on it");
         desc.add(YT_ID + "item." + EB_ID + "is_that_pottery_sherd.desc", ":)");
         desc.add(YT_ID + "item." + EB_ID + "kokos_bug_pottery_sherd.desc", "A ceramic remnant with a KOKOS BUG painted on it");
-        desc.add(YT_ID + "item." + EB_ID + "suspicious_pottery_sherd.desc", "A ceramic remnant... that seems a bit suspicious");
+        desc.add(YT_ID + "item." + EB_ID + "thief_pottery_sherd.desc", "A ceramic remnant with a thief painted on it");
 
         desc.add(YT_ID + "item." + AC_ID + "red_paintbrush.desc", "§4...so pick up your brush, and paint §4the world §4§lRED");
 

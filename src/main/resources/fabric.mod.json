@@ -3,7 +3,7 @@
 	"id": "yapping_tooltips",
 	"version": "${version}",
 	"name": "Yapping Tooltips",
-	"description": "A small client side mod that adds tooltips to every item",
+	"description": "Yapping Tooltips is a small client side mod that adds tooltips to every item",
 	"authors": [
 		"Yirmiri"
 	],
@@ -26,10 +26,11 @@
 		"yapping_tooltips.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.11",
+		"fabricloader": ">=0.16.0",
 		"minecraft": "~1.21",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"forgeconfigapiport": ">=21.0.3"
 	},
 	"suggests": {
 		"another-mod": "tooltipfix"

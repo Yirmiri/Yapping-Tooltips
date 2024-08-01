@@ -4,6 +4,18 @@ Literally just a secret .txt file of every single update's changelog
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Version Release 1.2.0 (Fabric/Quilt: 1.21)
+
+  Changes
+•   Tooltips will no longer display if they are empty
+•   The mod now requires Forge Config API Port instead of Cloth Config
+•   The mod now requires at least Fabric Loader v0.16
+
+  Fixes
+•   Contributor capes are no longer overridden by vanilla capes
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Version Release v1.1.0 (Fabric/Quilt: 1.20.1/1.21)
 Small Update
 
