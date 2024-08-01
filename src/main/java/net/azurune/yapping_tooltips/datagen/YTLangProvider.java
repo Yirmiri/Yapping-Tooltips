@@ -23,9 +23,10 @@ public class YTLangProvider extends FabricLanguageProvider {
     public void generateTranslations(RegistryWrapper.WrapperLookup lookup, TranslationBuilder desc) {
         desc.add(YT_ID + "more_information", "[%s] to show tooltip");
 
-        //TODO: MORE TRIMS
-
         //1.21 UPDATE
+        desc.add(YT_ID + "item." + ID + "flow_armor_trim_smithing_template.desc", "A breeze rod tablet that can be used to trim armor");
+        desc.add(YT_ID + "item." + ID + "bolt_armor_trim_smithing_template.desc", "A copper tablet that can be used to trim armor");
+
         desc.add(YT_ID + "block." + ID + "tuff_stairs.desc", "Tough stairs constructed from tuff");
         desc.add(YT_ID + "block." + ID + "tuff_slab.desc", "Tough slab constructed from tuff");
         desc.add(YT_ID + "block." + ID + "tuff_wall.desc", "A tough wall that can connect to other walls, too high to jump over");

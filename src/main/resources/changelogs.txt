@@ -6,10 +6,14 @@ Literally just a secret .txt file of every single update's changelog
 
 Version Release 1.2.0 (Fabric/Quilt: 1.21)
 
+  Additions
+•   Added tooltips for flow and bolt armor trims
+
   Changes
-•   Tooltips will no longer display if they are empty
+•   Tooltips will no longer display if they are empty (great for modpack creators that do not want specific tooltips in game)
 •   The mod now requires Forge Config API Port instead of Cloth Config
 •   The mod now requires at least Fabric Loader v0.16
+•   Shift to display tooltips is now on by default
 
   Fixes
 •   Contributor capes are no longer overridden by vanilla capes
