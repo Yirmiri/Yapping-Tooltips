@@ -993,7 +993,7 @@ public class YTLangProvider extends FabricLanguageProvider {
 
         desc.add(YT_ID + "block." + ID + "flower_pot.desc", "A small decorative to hold flowers in");
         desc.add(YT_ID + "block." + ID + "decorated_pot.desc", "A ceramic pot that can be decorated using sherds");
-        desc.add(YT_ID + "item." + ID + "armor_stand.desc", "A small decorative to hold equipment on");
+        desc.add(YT_ID + "item." + ID + "armor_stand.desc", "A small decorative stand to hold equipment on");
         desc.add(YT_ID + "item." + ID + "item_frame.desc", "A small decorative to frame items in");
         desc.add(YT_ID + "item." + ID + "glow_item_frame.desc", "A small decorative to frame items in, glows in the dark");
         desc.add(YT_ID + "item." + ID + "painting.desc", "A small decorative to frame a picture on");
@@ -1141,7 +1141,7 @@ public class YTLangProvider extends FabricLanguageProvider {
         desc.add(YT_ID + "item." + ID + "writable_book.desc", "Can be written inside or used to clone signed books, when signed cannot be editied");
         desc.add(YT_ID + "item." + ID + "ender_pearl.desc", "A mysterious pearl that teleports the user to when shattered");
 
-        desc.add(YT_ID + "item." + ID + "elytra.desc", "A pair of wings that can be used to glide, propels the user when fireworks are usesd");
+        desc.add(YT_ID + "item." + ID + "elytra.desc", "A pair of wings that can be used to glide, propels the user when fireworks are used");
         desc.add(YT_ID + "item." + ID + "saddle.desc", "Can be used to ride some animals");
         desc.add(YT_ID + "item." + ID + "carrot_on_a_stick.desc", "When pigs fly!");
         desc.add(YT_ID + "item." + ID + "warped_fungus_on_a_stick.desc", "A strider's favorite snack!");
