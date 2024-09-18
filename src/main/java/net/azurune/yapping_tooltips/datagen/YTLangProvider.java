@@ -53,14 +53,14 @@ public class YTLangProvider extends FabricLanguageProvider {
         desc.add(YT_ID + "block." + ID + "waxed_weathered_chiseled_copper.desc", "An oxidized copper block that has been finely chiseled");
         desc.add(YT_ID + "block." + ID + "waxed_oxidized_chiseled_copper.desc", "A fully oxidized copper block that has been finely chiseled");
 
-        desc.add(YT_ID + "block." + ID + "copper_grate.desc", "A copper block that has been chiseled, can be waterlogged");
-        desc.add(YT_ID + "block." + ID + "exposed_copper_grate.desc", "A slightly oxidized copper block that has been chiseled, can be waterlogged");
-        desc.add(YT_ID + "block." + ID + "weathered_copper_grate.desc", "An oxidized copper block that has been chiseled, can be waterlogged");
-        desc.add(YT_ID + "block." + ID + "oxidized_copper_grate.desc", "A fully oxidized copper block that has been chiseled, can be waterlogged");
-        desc.add(YT_ID + "block." + ID + "waxed_copper_grate.desc", "A copper block that has been chiseled, can be waterlogged");
-        desc.add(YT_ID + "block." + ID + "waxed_exposed_copper_grate.desc", "A slightly oxidized copper block that has been chiseled, can be waterlogged");
-        desc.add(YT_ID + "block." + ID + "waxed_weathered_copper_grate.desc", "An oxidized copper block that has been chiseled, can be waterlogged");
-        desc.add(YT_ID + "block." + ID + "waxed_oxidized_copper_grate.desc", "A fully oxidized copper block that has been chiseled, can be waterlogged");
+        desc.add(YT_ID + "block." + ID + "copper_grate.desc", "A copper block that had gaps chiseled into it");
+        desc.add(YT_ID + "block." + ID + "exposed_copper_grate.desc", "A slightly oxidized copper block that had gaps chiseled into it");
+        desc.add(YT_ID + "block." + ID + "weathered_copper_grate.desc", "An oxidized copper block that had gaps chiseled into it");
+        desc.add(YT_ID + "block." + ID + "oxidized_copper_grate.desc", "A fully oxidized copper block that had gaps chiseled into it");
+        desc.add(YT_ID + "block." + ID + "waxed_copper_grate.desc", "A copper block that had gaps chiseled into it");
+        desc.add(YT_ID + "block." + ID + "waxed_exposed_copper_grate.desc", "A slightly oxidized copper block that had gaps chiseled into it");
+        desc.add(YT_ID + "block." + ID + "waxed_weathered_copper_grate.desc", "An oxidized copper block that had gaps chiseled into it");
+        desc.add(YT_ID + "block." + ID + "waxed_oxidized_copper_grate.desc", "A fully oxidized copper block that had gaps chiseled into it");
 
         desc.add(YT_ID + "block." + ID + "copper_bulb.desc", "A bulb that can be toggled with a redstone signal");
         desc.add(YT_ID + "block." + ID + "exposed_copper_bulb.desc", "A slightly oxidized bulb that can be toggled with a redstone signal");
@@ -701,7 +701,7 @@ public class YTLangProvider extends FabricLanguageProvider {
         desc.add(YT_ID + "block." + ID + "magenta_bed.desc", "Make yourself feel at home, allows setting a spawnpoint");
         desc.add(YT_ID + "block." + ID + "pink_bed.desc", "Make yourself feel at home, allows setting a spawnpoint");
 
-        desc.add(YT_ID + "block." + ID + "candle.desc", "A light source that can create a bigger light the more there are on one space");
+        desc.add(YT_ID + "block." + ID + "candle.desc", "A source of light that gets bigger when more are placed in one space");
         desc.add(YT_ID + "block." + ID + "white_candle.desc", "A candle that has been dyed white");
         desc.add(YT_ID + "block." + ID + "light_gray_candle.desc", "A candle that has been dyed light gray");
         desc.add(YT_ID + "block." + ID + "gray_candle.desc", "A candle that has been dyed gray");
@@ -1742,7 +1742,7 @@ public class YTLangProvider extends FabricLanguageProvider {
         desc.add(YT_ID + "block." + EB_ID + "brimstone_tile_vertical_stairs.desc", "Rough vertical stairs constructed from brimstone tiles");
         desc.add(YT_ID + "block." + EB_ID + "brimstone_tile_slab.desc", "Rough slabs constructed from brimstone tiles");
         desc.add(YT_ID + "block." + EB_ID + "brimstone_pillar.desc", "Brimstone that has been finely carved into a pillar");
-        desc.add(YT_ID + "block." + EB_ID + "brimstone_lamp.desc", "A lantern created from glowing dust and brimstone");
+        desc.add(YT_ID + "block." + EB_ID + "brimstone_lamp.desc", "A lamp created from glowing dust and brimstone");
         desc.add(YT_ID + "block." + EB_ID + "brimstone_window.desc", "So much for being called a window...");
         desc.add(YT_ID + "block." + EB_ID + "tuff_tiles.desc", "Tuff compacted into tiles");
         desc.add(YT_ID + "block." + EB_ID + "tuff_tile_stairs.desc", "Tough stairs constructed from tuff tiles");
@@ -2157,7 +2157,6 @@ public class YTLangProvider extends FabricLanguageProvider {
         desc.add(YT_ID + "block." + EB_ID + "engraved_soul_sandstone_bricks.desc", "Soul sandstone bricks that has been engraved with ancient symbols");
         desc.add(YT_ID + "block." + EB_ID + "decorated_soul_sandstone_bricks.desc", "Soul sandstone bricks that have been fancily chiseled");
         desc.add(YT_ID + "block." + EB_ID + "chiseled_soul_sandstone_bricks.desc", "Soul sandstone bricks that has been chiseled with an ancient symbol");
-
         desc.add(YT_ID + "block." + EB_ID + "soul_magma_block.desc", "Hotter to the touch...");
         desc.add(YT_ID + "block." + EB_ID + "cracked_mud_bricks.desc", "Mud bricks that took a beating");
         desc.add(YT_ID + "block." + EB_ID + "bone_bricks.desc", "Bone compacted into bricks");
@@ -2165,6 +2164,168 @@ public class YTLangProvider extends FabricLanguageProvider {
         desc.add(YT_ID + "block." + EB_ID + "bone_brick_vertical_stairs.desc", "Smooth vertical stairs constructed from bone bricks");
         desc.add(YT_ID + "block." + EB_ID + "bone_brick_slab.desc", "Smooth slabs constructed from bone bricks");
         desc.add(YT_ID + "block." + EB_ID + "bone_brick_wall.desc", "A smooth wall that can connect to other walls, too high to jump over");
+        desc.add(YT_ID + "block." + EB_ID + "quartz_tiles.desc", "Quartz blocks compacted into tiles");
+        desc.add(YT_ID + "block." + EB_ID + "quartz_tile_stairs.desc", "Smooth stairs constructed from quartz tiles");
+        desc.add(YT_ID + "block." + EB_ID + "quartz_tile_vertical_stairs.desc", "Smooth vertical stairs constructed from quartz tiles");
+        desc.add(YT_ID + "block." + EB_ID + "quartz_tile_slab.desc", "Smooth slabs constructed from quartz tiles");
+        desc.add(YT_ID + "block." + EB_ID + "quartz_tile_wall.desc", "A smooth wall that can connect to other walls, too high to jump over");
+
+        desc.add(YT_ID + "block." + EB_ID + "iron_bricks.desc", "Iron blocks compacted into bricks");
+        desc.add(YT_ID + "block." + EB_ID + "iron_brick_stairs.desc", "Metallic stairs constructed from iron bricks");
+        desc.add(YT_ID + "block." + EB_ID + "iron_brick_vertical_stairs.desc", "Metallic vertical stairs constructed from iron bricks");
+        desc.add(YT_ID + "block." + EB_ID + "iron_brick_slab.desc", "Metallic slabs constructed from iron bricks");
+        desc.add(YT_ID + "block." + EB_ID + "gold_bricks.desc", "Gold blocks compacted into bricks");
+        desc.add(YT_ID + "block." + EB_ID + "gold_brick_stairs.desc", "Metallic stairs constructed from gold bricks");
+        desc.add(YT_ID + "block." + EB_ID + "gold_brick_vertical_stairs.desc", "Metallic vertical stairs constructed from gold bricks");
+        desc.add(YT_ID + "block." + EB_ID + "gold_brick_slab.desc", "Metallic slabs constructed from gold bricks");
+        desc.add(YT_ID + "block." + EB_ID + "iron_grate.desc", "An iron block that had gaps chiseled into it");
+        desc.add(YT_ID + "block." + EB_ID + "gold_grate.desc", "A gold block that had gaps chiseled into it");
+        desc.add(YT_ID + "block." + EB_ID + "redstone_bricks.desc", "Redstone blocks compacted into bricks");
+        desc.add(YT_ID + "block." + EB_ID + "redstone_brick_stairs.desc", "Dusty stairs constructed from redstone bricks");
+        desc.add(YT_ID + "block." + EB_ID + "redstone_brick_vertical_stairs.desc", "Dusty vertical stairs constructed from redstone bricks");
+        desc.add(YT_ID + "block." + EB_ID + "redstone_brick_slab.desc", "Dusty slabs constructed from redstone bricks");
+        desc.add(YT_ID + "block." + EB_ID + "emerald_bricks.desc", "Emerald blocks compacted into bricks");
+        desc.add(YT_ID + "block." + EB_ID + "emerald_brick_stairs.desc", "Shiny stairs constructed from emerald bricks");
+        desc.add(YT_ID + "block." + EB_ID + "emerald_brick_vertical_stairs.desc", "Shiny vertical stairs constructed from emerald bricks");
+        desc.add(YT_ID + "block." + EB_ID + "emerald_brick_slab.desc", "Shiny slabs constructed from emerald bricks");
+        desc.add(YT_ID + "block." + EB_ID + "diamond_bricks.desc", "Diamond blocks compacted into bricks");
+        desc.add(YT_ID + "block." + EB_ID + "diamond_brick_stairs.desc", "Shiny stairs constructed from diamond bricks");
+        desc.add(YT_ID + "block." + EB_ID + "diamond_brick_vertical_stairs.desc", "Shiny vertical stairs constructed from diamond bricks");
+        desc.add(YT_ID + "block." + EB_ID + "diamond_brick_slab.desc", "Shiny slabs constructed from diamond bricks");
+        desc.add(YT_ID + "block." + EB_ID + "lapis_bricks.desc", "Lapis blocks compacted into bricks");
+        desc.add(YT_ID + "block." + EB_ID + "lapis_brick_stairs.desc", "Smooth stairs constructed from lapis bricks");
+        desc.add(YT_ID + "block." + EB_ID + "lapis_brick_vertical_stairs.desc", "Smooth vertical stairs constructed from lapis bricks");
+        desc.add(YT_ID + "block." + EB_ID + "lapis_brick_slab.desc", "Smooth slabs constructed from lapis bricks");
+        desc.add(YT_ID + "block." + EB_ID + "netherite_bricks.desc", "Netherite blocks compacted into bricks");
+        desc.add(YT_ID + "block." + EB_ID + "netherite_brick_stairs.desc", "Heavy stairs constructed from netherite bricks");
+        desc.add(YT_ID + "block." + EB_ID + "netherite_brick_vertical_stairs.desc", "Heavy vertical stairs constructed from netherite bricks");
+        desc.add(YT_ID + "block." + EB_ID + "netherite_brick_slab.desc", "Heavy slabs constructed from netherite bricks");
+
+        desc.add(YT_ID + "block." + EB_ID + "copper_bricks.desc", "Copper blocks compacted into bricks");
+        desc.add(YT_ID + "block." + EB_ID + "copper_brick_stairs.desc", "Metallic stairs constructed from copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "copper_brick_vertical_stairs.desc", "Metallic vertical stairs constructed from copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "copper_brick_slab.desc", "Metallic slabs constructed from copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "copper_pressure_plate.desc", "Produces a redstone signal when ONLY players make contact with it, stays pushed for 0.5 seconds");
+        desc.add(YT_ID + "block." + EB_ID + "copper_button.desc", "Can be pushed by players, stays pushed for 0.5 seconds");
+
+        desc.add(YT_ID + "block." + EB_ID + "exposed_copper_bricks.desc", "Exposed copper blocks compacted into bricks");
+        desc.add(YT_ID + "block." + EB_ID + "exposed_copper_brick_stairs.desc", "Metallic stairs constructed from exposed copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "exposed_copper_brick_vertical_stairs.desc", "Metallic vertical stairs constructed from exposed copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "exposed_copper_brick_slab.desc", "Metallic slabs constructed from exposed copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "exposed_copper_pressure_plate.desc", "Produces a redstone signal when ONLY players make contact with it, stays pushed for 1.0 seconds");
+        desc.add(YT_ID + "block." + EB_ID + "exposed_copper_button.desc", "Can be pushed by players, stays pushed for 1.0 seconds");
+
+        desc.add(YT_ID + "block." + EB_ID + "weathered_copper_bricks.desc", "Weathered copper blocks compacted into bricks");
+        desc.add(YT_ID + "block." + EB_ID + "weathered_copper_brick_stairs.desc", "Metallic stairs constructed from weathered copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "weathered_copper_brick_vertical_stairs.desc", "Metallic vertical stairs constructed from weathered copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "weathered_copper_brick_slab.desc", "Metallic slabs constructed from weathered copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "weathered_copper_pressure_plate.desc", "Produces a redstone signal when ONLY players make contact with it, stays pushed for 1.5 seconds");
+        desc.add(YT_ID + "block." + EB_ID + "weathered_copper_button.desc", "Can be pushed by players, stays pushed for 1.5 seconds");
+
+        desc.add(YT_ID + "block." + EB_ID + "oxidized_copper_bricks.desc", "Oxidized copper blocks compacted into bricks");
+        desc.add(YT_ID + "block." + EB_ID + "oxidized_copper_brick_stairs.desc", "Metallic stairs constructed from oxidized copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "oxidized_copper_brick_vertical_stairs.desc", "Metallic vertical stairs constructed from oxidized copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "oxidized_copper_brick_slab.desc", "Metallic slabs constructed from oxidized copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "oxidized_copper_pressure_plate.desc", "Produces a redstone signal when ONLY players make contact with it, stays pushed for 2.0 seconds");
+        desc.add(YT_ID + "block." + EB_ID + "oxidized_copper_button.desc", "Can be pushed by players, stays pushed for 2.0 seconds");
+
+        desc.add(YT_ID + "block." + EB_ID + "waxed_copper_bricks.desc", "Copper blocks compacted into bricks");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_copper_brick_stairs.desc", "Metallic stairs constructed from copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_copper_brick_vertical_stairs.desc", "Metallic vertical stairs constructed from copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_copper_brick_slab.desc", "Metallic slabs constructed from copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_copper_pressure_plate.desc", "Produces a redstone signal when ONLY players make contact with it, stays pushed for 0.5 seconds");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_copper_button.desc", "Can be pushed by players, stays pushed for 0.5 seconds");
+
+        desc.add(YT_ID + "block." + EB_ID + "waxed_exposed_copper_bricks.desc", "Exposed copper blocks compacted into bricks");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_exposed_copper_brick_stairs.desc", "Metallic stairs constructed from exposed copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_exposed_copper_brick_vertical_stairs.desc", "Metallic vertical stairs constructed from exposed copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_exposed_copper_brick_slab.desc", "Metallic slabs constructed from exposed copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_exposed_copper_pressure_plate.desc", "Produces a redstone signal when ONLY players make contact with it, stays pushed for 1.0 seconds");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_exposed_copper_button.desc", "Can be pushed by players, stays pushed for 1.0 seconds");
+
+        desc.add(YT_ID + "block." + EB_ID + "waxed_weathered_copper_bricks.desc", "Weathered copper blocks compacted into bricks");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_weathered_copper_brick_stairs.desc", "Metallic stairs constructed from weathered copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_weathered_copper_brick_vertical_stairs.desc", "Metallic vertical stairs constructed from weathered copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_weathered_copper_brick_slab.desc", "Metallic slabs constructed from weathered copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_weathered_copper_pressure_plate.desc", "Produces a redstone signal when ONLY players make contact with it, stays pushed for 1.5 seconds");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_weathered_copper_button.desc", "Can be pushed by players, stays pushed for 1.5 seconds");
+
+        desc.add(YT_ID + "block." + EB_ID + "waxed_oxidized_copper_bricks.desc", "Oxidized copper blocks compacted into bricks");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_oxidized_copper_brick_stairs.desc", "Metallic stairs constructed from oxidized copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_oxidized_copper_brick_vertical_stairs.desc", "Metallic vertical stairs constructed from oxidized copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_oxidized_copper_brick_slab.desc", "Metallic slabs constructed from oxidized copper bricks");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_oxidized_copper_pressure_plate.desc", "Produces a redstone signal when ONLY players make contact with it, stays pushed for 2.0 seconds");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_oxidized_copper_button.desc", "Can be pushed by players, stays pushed for 2.0 seconds");
+
+        desc.add(YT_ID + "block." + EB_ID + "rose.desc", "The world looks red...");
+        desc.add(YT_ID + "block." + EB_ID + "cyan_rose.desc", "The world looks blue...");
+        desc.add(YT_ID + "block." + EB_ID + "white_rose.desc", "The world looks white...");
+        desc.add(YT_ID + "block." + EB_ID + "moss_paste.desc", "Moss that creeps around any block it is placed on");
+        desc.add(YT_ID + "block." + EB_ID + "amethyst_lamp.desc", "A lamp created from precious amethyst shards");
+        desc.add(YT_ID + "block." + EB_ID + "reaching_lantern.desc", "Grants the reaching effect to nearby players");
+        desc.add(YT_ID + "block." + EB_ID + "weeping_candle.desc", "A source of light that spawns particles around when lit");
+        desc.add(YT_ID + "block." + EB_ID + "twisting_candle.desc", "A source of light that spawns particles around when lit");
+        desc.add(YT_ID + "block." + EB_ID + "wooden_mug.desc", "Don't ask about the texture file... this is an ancient model I bandaged together");
+        desc.add(YT_ID + "block." + EB_ID + "glass_jar.desc", "A glass container that can be hung");
+        desc.add(YT_ID + "block." + EB_ID + "glass_jar_of_fire.desc", "A source of light that can be hung");
+        desc.add(YT_ID + "block." + EB_ID + "glass_jar_of_soul_fire.desc", "A source of light that can be hung");
+
+        desc.add(YT_ID + "block." + EB_ID + "tuff_vertical_stairs.desc", "Tough vertical stairs constructed from tuff");
+        desc.add(YT_ID + "block." + EB_ID + "polished_tuff_vertical_stairs.desc", "Smooth vertical stairs constructed from polished tuff");
+        desc.add(YT_ID + "block." + EB_ID + "tuff_brick_vertical_stairs.desc", "Tough vertical stairs constructed from tuff bricks");
+        desc.add(YT_ID + "block." + EB_ID + "oak_vertical_stairs.desc", "Fine wooden vertical stairs constructed from oak");
+        desc.add(YT_ID + "block." + EB_ID + "spruce_vertical_stairs.desc", "Fine wooden vertical stairs constructed from spruce");
+        desc.add(YT_ID + "block." + EB_ID + "birch_vertical_stairs.desc", "Fine wooden vertical stairs constructed from birch");
+        desc.add(YT_ID + "block." + EB_ID + "acacia_vertical_stairs.desc", "Fine wooden vertical stairs constructed from acacia");
+        desc.add(YT_ID + "block." + EB_ID + "dark_oak_vertical_stairs.desc", "Fine wooden vertical stairs constructed from dark oak");
+        desc.add(YT_ID + "block." + EB_ID + "jungle_vertical_stairs.desc", "Fine wooden vertical stairs constructed from jungle");
+        desc.add(YT_ID + "block." + EB_ID + "cherry_vertical_stairs.desc", "Fine wooden vertical stairs constructed from cherry");
+        desc.add(YT_ID + "block." + EB_ID + "mangrove_vertical_stairs.desc", "Fine wooden vertical stairs constructed from mangrove");
+        desc.add(YT_ID + "block." + EB_ID + "bamboo_vertical_stairs.desc", "Creaky vertical stairs constructed from bamboo");
+        desc.add(YT_ID + "block." + EB_ID + "bamboo_mosaic_vertical_stairs.desc", "Creaky vertical stairs fancily carved from bamboo");
+        desc.add(YT_ID + "block." + EB_ID + "crimson_vertical_stairs.desc", "Flimsy fungal vertical stairs constructed from crimson planks");
+        desc.add(YT_ID + "block." + EB_ID + "warped_vertical_stairs.desc", "Flimsy fungal vertical stairs constructed from warped planks");
+        desc.add(YT_ID + "block." + EB_ID + "stone_vertical_stairs.desc", "Smooth vertical stairs constructed from stone");
+        desc.add(YT_ID + "block." + EB_ID + "cobblestone_vertical_stairs.desc", "Rough vertical stairs constructed from cobblestone");
+        desc.add(YT_ID + "block." + EB_ID + "mossy_cobblestone_vertical_stairs.desc", "Rough vertical stairs constructed from mossy cobblestone");
+        desc.add(YT_ID + "block." + EB_ID + "stone_brick_vertical_stairs.desc", "Smooth vertical stairs constructed from stone bricks");
+        desc.add(YT_ID + "block." + EB_ID + "mossy_stone_brick_vertical_stairs.desc", "Smooth vertical stairs constructed from mossy stone bricks");
+        desc.add(YT_ID + "block." + EB_ID + "granite_vertical_stairs.desc", "Rough vertical stairs constructed from granite");
+        desc.add(YT_ID + "block." + EB_ID + "polished_granite_vertical_stairs.desc", "Smooth vertical stairs constructed from polished granite");
+        desc.add(YT_ID + "block." + EB_ID + "andesite_vertical_stairs.desc", "Rough vertical stairs constructed from andesite");
+        desc.add(YT_ID + "block." + EB_ID + "polished_andesite_vertical_stairs.desc", "Smooth vertical stairs constructed from polished andesite");
+        desc.add(YT_ID + "block." + EB_ID + "diorite_vertical_stairs.desc", "Rough vertical stairs constructed from diorite");
+        desc.add(YT_ID + "block." + EB_ID + "polished_diorite_vertical_stairs.desc", "Smooth vertical stairs constructed from polished diorite");
+        desc.add(YT_ID + "block." + EB_ID + "cobbled_deepslate_vertical_stairs.desc", "Tough vertical stairs constructed from cobbled deepslate");
+        desc.add(YT_ID + "block." + EB_ID + "polished_deepslate_vertical_stairs.desc", "Smooth vertical stairs constructed from polished deepslate");
+        desc.add(YT_ID + "block." + EB_ID + "deepslate_brick_vertical_stairs.desc", "Smooth vertical stairs constructed from deepslate bricks");
+        desc.add(YT_ID + "block." + EB_ID + "deepslate_tile_vertical_stairs.desc", "Smooth vertical stairs constructed from deepslate tiles");
+        desc.add(YT_ID + "block." + EB_ID + "brick_vertical_stairs.desc", "Rough vertical stairs constructed from bricks");
+        desc.add(YT_ID + "block." + EB_ID + "mud_brick_vertical_stairs.desc", "Soft vertical stairs constructed from mud bricks");
+        desc.add(YT_ID + "block." + EB_ID + "sandstone_vertical_stairs.desc", "Soft vertical stairs constructed from sandstone");
+        desc.add(YT_ID + "block." + EB_ID + "smooth_sandstone_vertical_stairs.desc", "Hard vertical stairs constructed from smooth sandstone");
+        desc.add(YT_ID + "block." + EB_ID + "red_sandstone_vertical_stairs.desc", "Soft vertical stairs constructed from red sandstone");
+        desc.add(YT_ID + "block." + EB_ID + "smooth_red_sandstone_vertical_stairs.desc", "Hard vertical stairs constructed from smooth red sandstone");
+        desc.add(YT_ID + "block." + EB_ID + "prismarine_vertical_stairs.desc", "Pristine vertical stairs constructed from prismarine");
+        desc.add(YT_ID + "block." + EB_ID + "prismarine_brick_vertical_stairs.desc", "Pristine vertical stairs constructed from prismarine bricks");
+        desc.add(YT_ID + "block." + EB_ID + "dark_prismarine_vertical_stairs.desc", "Pristine vertical stairs constructed from dark prismarine");
+        desc.add(YT_ID + "block." + EB_ID + "nether_brick_vertical_stairs.desc", "Rough vertical stairs constructed from nether bricks");
+        desc.add(YT_ID + "block." + EB_ID + "red_nether_brick_vertical_stairs.desc", "Rough vertical stairs constructed from red nether bricks");
+        desc.add(YT_ID + "block." + EB_ID + "blackstone_vertical_stairs.desc", "Rough vertical stairs constructed from blackstone");
+        desc.add(YT_ID + "block." + EB_ID + "polished_blackstone_vertical_stairs.desc", "Rough vertical stairs constructed from polished blackstone");
+        desc.add(YT_ID + "block." + EB_ID + "polished_blackstone_brick_vertical_stairs.desc", "Rough vertical stairs constructed from polished blackstone bricks");
+        desc.add(YT_ID + "block." + EB_ID + "end_stone_brick_vertical_stairs.desc", "Spongy vertical stairs constructed from end stone");
+        desc.add(YT_ID + "block." + EB_ID + "purpur_vertical_stairs.desc", "Hardened vertical stairs constructed from purpur blocks");
+        desc.add(YT_ID + "block." + EB_ID + "quartz_vertical_stairs.desc", "Pristine vertical stairs constructed from quartz blocks");
+        desc.add(YT_ID + "block." + EB_ID + "smooth_quartz_vertical_stairs.desc", "Pristine vertical stairs constructed from smooth quartz");
+        desc.add(YT_ID + "block." + EB_ID + "cut_copper_vertical_stairs.desc", "Metallic vertical stairs constructed from cut copper");
+        desc.add(YT_ID + "block." + EB_ID + "exposed_cut_copper_vertical_stairs.desc", "Metallic vertical stairs constructed from exposed cut copper");
+        desc.add(YT_ID + "block." + EB_ID + "weathered_cut_copper_vertical_stairs.desc", "Metallic vertical stairs constructed from weathered cut copper");
+        desc.add(YT_ID + "block." + EB_ID + "oxidized_cut_copper_vertical_stairs.desc", "Metallic vertical stairs constructed from oxidized cut copper");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_cut_copper_vertical_stairs.desc", "Metallic vertical stairs constructed from cut copper");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_exposed_cut_copper_vertical_stairs.desc", "Metallic vertical stairs constructed from exposed cut copper");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_weathered_cut_copper_vertical_stairs.desc", "Metallic vertical stairs constructed from weathered cut copper");
+        desc.add(YT_ID + "block." + EB_ID + "waxed_oxidized_cut_copper_vertical_stairs.desc", "Metallic vertical stairs constructed from oxidized cut copper");
 
         //ARTS AND CRAFTS
         desc.add(YT_ID + "item." + AC_ID + "red_paintbrush.desc", "§4...so pick up your brush, and paint §4the world §4§lRED");

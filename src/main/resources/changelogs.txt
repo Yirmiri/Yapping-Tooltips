@@ -11,6 +11,9 @@ Version Release v1.2.2 (Fabric/Quilt: 1.21(.1)
 
   Changes
 •   Updated the tooltip for all wool variants from "A soft layer dyed..." to "A soft cover dyed..."
+•   Updated the tooltip for all grate blocks from "[block name] that has been chiseled, can be waterlogged" to "[block name] that has had gaps chiseled into it"
+•   Updated the tooltip for normal candles from "A light source that can create a bigger light the more there are on one space"
+...to "A source of light that gets bigger when more are placed in one space"
 •   Updated zh_tw (@yichifauzi)
 •   Updated contributor capes
 
