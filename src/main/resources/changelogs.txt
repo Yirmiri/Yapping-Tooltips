@@ -10,6 +10,7 @@ Version Release v1.2.2 (Fabric/Quilt: 1.21(.1)
 •   Added compatibility for the latest version of Excessive Building
 
   Changes
+•   Updated the tooltip for all wool variants from "A soft layer dyed..." to "A soft cover dyed..."
 •   Updated zh_tw (@yichifauzi)
 •   Updated contributor capes
 
