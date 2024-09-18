@@ -6,6 +6,9 @@ Literally just a secret .txt file of every single update's changelog
 
 Version Release v1.2.2 (Fabric/Quilt: 1.21(.1)
 
+  Additions
+•   Added compatibility for the latest version of Excessive Building
+
   Changes
 •   Updated zh_tw (@yichifauzi)
 •   Updated contributor capes
