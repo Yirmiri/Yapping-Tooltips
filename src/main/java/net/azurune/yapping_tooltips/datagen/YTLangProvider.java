@@ -2325,6 +2325,7 @@ public class YTLangProvider extends FabricLanguageProvider {
         desc.add(YT_ID + "block." + EB_ID + "waxed_exposed_cut_copper_vertical_stairs.desc", "Metallic vertical stairs constructed from exposed cut copper");
         desc.add(YT_ID + "block." + EB_ID + "waxed_weathered_cut_copper_vertical_stairs.desc", "Metallic vertical stairs constructed from weathered cut copper");
         desc.add(YT_ID + "block." + EB_ID + "waxed_oxidized_cut_copper_vertical_stairs.desc", "Metallic vertical stairs constructed from oxidized cut copper");
+        desc.add(YT_ID + "block." + EB_ID + "logo_block.desc", "A great dog house!");
 
         //ARTS AND CRAFTS
         desc.add(YT_ID + "item." + AC_ID + "red_paintbrush.desc", "§4...so pick up your brush, and paint §4the world §4§lRED");
