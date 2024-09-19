@@ -2282,7 +2282,6 @@ public class YTLangProvider extends FabricLanguageProvider {
         desc.add(YT_ID + "block." + EB_ID + "cherry_vertical_stairs.desc", "Fine wooden vertical stairs constructed from cherry");
         desc.add(YT_ID + "block." + EB_ID + "mangrove_vertical_stairs.desc", "Fine wooden vertical stairs constructed from mangrove");
         desc.add(YT_ID + "block." + EB_ID + "bamboo_vertical_stairs.desc", "Creaky vertical stairs constructed from bamboo");
-        desc.add(YT_ID + "block." + EB_ID + "bamboo_mosaic_vertical_stairs.desc", "Creaky vertical stairs fancily carved from bamboo");
         desc.add(YT_ID + "block." + EB_ID + "crimson_vertical_stairs.desc", "Flimsy fungal vertical stairs constructed from crimson planks");
         desc.add(YT_ID + "block." + EB_ID + "warped_vertical_stairs.desc", "Flimsy fungal vertical stairs constructed from warped planks");
         desc.add(YT_ID + "block." + EB_ID + "stone_vertical_stairs.desc", "Smooth vertical stairs constructed from stone");
