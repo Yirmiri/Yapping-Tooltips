@@ -4,6 +4,15 @@ Literally just a secret .txt file of every single update's changelog
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Version Release v1.2.3 (Fabric/Quilt: 1.21.1
+
+  Additions
+•   Added Arts & Crafts compat into this mod (compat mod is no longer required for descriptions + updated many descriptions)
+•   Added appledog compat
+•   Updated Excessive Building compatibility (almentra statues)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Version Release v1.2.3 (Fabric/Quilt: 1.21(.1)
 
   Additions
