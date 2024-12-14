@@ -12,18 +12,18 @@
         "sources": "https://github.com/FabricMC/fabric-example-mod"
     },
     "license": "${license}",
-    "icon": "${mod_id}.png",
+    "icon": "icon.png",
     "environment": "*",
     "entrypoints": {
         "main": [
           "net.azurune.yapping_tooltips.FabricYappingTooltips"
         ],
         "fabric-datagen": [
-            "net.azurune.yapping_tooltips.datagen.YTLangProvider"
+            "net.azurune.yapping_tooltips.FabricYappingTooltipsDatagen"
         ]
     },
     "mixins": [
-        "${mod_id}.mixins.json"
+        "yapping_tooltips.mixins.json"
     ],
     "depends": {
         "fabricloader": ">=${fabric_loader_version}",

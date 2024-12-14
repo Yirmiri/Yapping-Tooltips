@@ -8,7 +8,6 @@
 
   ],
   "client": [
-    "IKeybindingMixin",
     "PlayerListEntryMixin",
     "ItemStackMixin"
   ],

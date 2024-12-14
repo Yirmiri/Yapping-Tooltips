@@ -5,7 +5,9 @@ import net.azurune.yapping_tooltips.YappingTooltips;
 import net.minecraft.client.multiplayer.PlayerInfo;
 import net.minecraft.client.resources.PlayerSkin;
 import net.minecraft.resources.ResourceLocation;
-import org.spongepowered.asm.mixin.*;
+import org.spongepowered.asm.mixin.Final;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
@@ -14,12 +16,9 @@ import java.util.function.Supplier;
 
 @Mixin(PlayerInfo.class)
 public abstract class PlayerListEntryMixin {
-    protected PlayerListEntryMixin(Supplier<PlayerSkin> texturesSupplier) {
-        this.texturesSupplier = texturesSupplier;
-    }
 
     @Shadow public abstract GameProfile getProfile();
-    @Unique @Mutable @Final private Supplier<PlayerSkin> texturesSupplier;
+    @Final private Supplier<PlayerSkin> texturesSupplier;
 
     @Inject(at = @At("HEAD"), method = "getSkin", cancellable = true)
     public void capeTexture(CallbackInfoReturnable<PlayerSkin> cir) {

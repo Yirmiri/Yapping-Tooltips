@@ -3,24 +3,25 @@ package net.azurune.yapping_tooltips.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.core.HolderLookup;
-
 import java.util.concurrent.CompletableFuture;
 
 public class YTLangProvider extends FabricLanguageProvider {
-    public YTLangProvider(FabricDataOutput dataOutput, CompletableFuture<HolderLookup.Provider> future) {
-        super(dataOutput, future);
+    public YTLangProvider(FabricDataOutput dataOutput, CompletableFuture<HolderLookup.Provider> registryLookup) {
+        super(dataOutput, registryLookup);
     }
 
     //IDENTIFIERS
     public static final String YT_ID = "yapping_tooltips.";
     public static final String ID = "minecraft.";
 
-    public static final String AC_ID = "arts_and_crafts.";
-    public static final String SP_ID = "snowpig.";
     public static final String EB_ID = "excessive_building.";
+    public static final String AC_ID = "arts_and_crafts.";
+    public static final String ACC_ID = "arts_and_crafts_compat.";
+    public static final String SP_ID = "snowpig.";
+    public static final String AD_ID = "appledog.";
 
     @Override
-    public void generateTranslations(HolderLookup.Provider future, TranslationBuilder desc) {
+    public void generateTranslations(HolderLookup.Provider lookup, TranslationBuilder desc) {
         desc.add(YT_ID + "more_information", "[%s] to show tooltip");
 
         //1.21 UPDATE
@@ -107,9 +108,9 @@ public class YTLangProvider extends FabricLanguageProvider {
         desc.add(YT_ID + "item." + ID + "bogged_spawn_egg.desc", "A poised skeleton that fires poisonous arrows at it's target");
         desc.add(YT_ID + "item." + ID + "breeze_spawn_egg.desc", "An air elemental that shoots balls of wind");
 
-        desc.add(YT_ID + "item." + ID + "flow_pottery_sherd.desc", "A ceramic remnant with a breeze flow painted on it");
-        desc.add(YT_ID + "item." + ID + "guster_pottery_sherd.desc", "A ceramic remnant with a breeze gust painted on it");
-        desc.add(YT_ID + "item." + ID + "scrape_pottery_sherd.desc", "A ceramic remnant with an axe painted on it");
+        desc.add(YT_ID + "item." + ID + "flow_pottery_sherd.desc", "A ceramic remnant with a breeze flow carved on it");
+        desc.add(YT_ID + "item." + ID + "guster_pottery_sherd.desc", "A ceramic remnant with a breeze gust carved on it");
+        desc.add(YT_ID + "item." + ID + "scrape_pottery_sherd.desc", "A ceramic remnant with an axe carved on it");
 
         //INITIAL UPDATE (1.0-1.21)
         desc.add(YT_ID + "block." + ID + "oak_log.desc", "A sturdy log from an oak tree");
@@ -1346,25 +1347,25 @@ public class YTLangProvider extends FabricLanguageProvider {
         desc.add(YT_ID + "item." + ID + "phantom_membrane.desc", "Tonight is going to be a horrible night.");
 
         desc.add(YT_ID + "item." + ID + "angler_pottery_sherd.desc", "\"It's just 200 fish\"");
-        desc.add(YT_ID + "item." + ID + "archer_pottery_sherd.desc", "A ceramic remnant with a bow painted on it");
-        desc.add(YT_ID + "item." + ID + "arms_up_pottery_sherd.desc", "A ceramic remnant with a figure pointing their arms up painted on it");
-        desc.add(YT_ID + "item." + ID + "blade_pottery_sherd.desc", "A ceramic remnant with a sharp blade painted on it");
-        desc.add(YT_ID + "item." + ID + "brewer_pottery_sherd.desc", "A ceramic remnant with a bitter brew painted on it");
-        desc.add(YT_ID + "item." + ID + "burn_pottery_sherd.desc", "A ceramic remnant with an ember painted on it");
-        desc.add(YT_ID + "item." + ID + "danger_pottery_sherd.desc", "A ceramic remnant with a creeper painted on it");
+        desc.add(YT_ID + "item." + ID + "archer_pottery_sherd.desc", "A ceramic remnant with a bow carved on it");
+        desc.add(YT_ID + "item." + ID + "arms_up_pottery_sherd.desc", "A ceramic remnant with a figure pointing their arms up carved on it");
+        desc.add(YT_ID + "item." + ID + "blade_pottery_sherd.desc", "A ceramic remnant with a sharp blade carved on it");
+        desc.add(YT_ID + "item." + ID + "brewer_pottery_sherd.desc", "A ceramic remnant with a bitter brew carved on it");
+        desc.add(YT_ID + "item." + ID + "burn_pottery_sherd.desc", "A ceramic remnant with an ember carved on it");
+        desc.add(YT_ID + "item." + ID + "danger_pottery_sherd.desc", "A ceramic remnant with a creeper carved on it");
         desc.add(YT_ID + "item." + ID + "explorer_pottery_sherd.desc", "\"Finder's keepers!\"");
         desc.add(YT_ID + "item." + ID + "friend_pottery_sherd.desc", "\"Best friends forever\"");
-        desc.add(YT_ID + "item." + ID + "heart_pottery_sherd.desc", "A ceramic remnant with a heart painted on it");
-        desc.add(YT_ID + "item." + ID + "heartbreak_pottery_sherd.desc", "A ceramic remnant with a broken heart painted on it");
-        desc.add(YT_ID + "item." + ID + "howl_pottery_sherd.desc", "A ceramic remnant with a wolf painted on it");
-        desc.add(YT_ID + "item." + ID + "miner_pottery_sherd.desc", "A ceramic remnant with a pickaxe painted on it");
-        desc.add(YT_ID + "item." + ID + "mourner_pottery_sherd.desc", "A ceramic remnant with something wicked painted on it");
-        desc.add(YT_ID + "item." + ID + "plenty_pottery_sherd.desc", "A ceramic remnant with a chest painted on it");
-        desc.add(YT_ID + "item." + ID + "prize_pottery_sherd.desc", "A ceramic remnant with a gemstone painted on it");
-        desc.add(YT_ID + "item." + ID + "sheaf_pottery_sherd.desc", "A ceramic remnant with wheat painted on it");
-        desc.add(YT_ID + "item." + ID + "shelter_pottery_sherd.desc", "A ceramic remnant with a tree painted on it");
-        desc.add(YT_ID + "item." + ID + "skull_pottery_sherd.desc", "A ceramic remnant with a skull painted on it");
-        desc.add(YT_ID + "item." + ID + "snort_pottery_sherd.desc", "A ceramic remnant with an ancient creature painted on it");
+        desc.add(YT_ID + "item." + ID + "heart_pottery_sherd.desc", "A ceramic remnant with a heart carved on it");
+        desc.add(YT_ID + "item." + ID + "heartbreak_pottery_sherd.desc", "A ceramic remnant with a broken heart carved on it");
+        desc.add(YT_ID + "item." + ID + "howl_pottery_sherd.desc", "A ceramic remnant with a wolf carved on it");
+        desc.add(YT_ID + "item." + ID + "miner_pottery_sherd.desc", "A ceramic remnant with a pickaxe carved on it");
+        desc.add(YT_ID + "item." + ID + "mourner_pottery_sherd.desc", "A ceramic remnant with something wicked carved on it");
+        desc.add(YT_ID + "item." + ID + "plenty_pottery_sherd.desc", "A ceramic remnant with a chest carved on it");
+        desc.add(YT_ID + "item." + ID + "prize_pottery_sherd.desc", "A ceramic remnant with a gemstone carved on it");
+        desc.add(YT_ID + "item." + ID + "sheaf_pottery_sherd.desc", "A ceramic remnant with wheat carved on it");
+        desc.add(YT_ID + "item." + ID + "shelter_pottery_sherd.desc", "A ceramic remnant with a tree carved on it");
+        desc.add(YT_ID + "item." + ID + "skull_pottery_sherd.desc", "A ceramic remnant with a skull carved on it");
+        desc.add(YT_ID + "item." + ID + "snort_pottery_sherd.desc", "A ceramic remnant with an ancient creature carved on it");
 
         desc.add(YT_ID + "item." + ID + "netherite_upgrade_smithing_template.desc", "A netherrack tablet that can upgrade diamond equipment to netherite");
         desc.add(YT_ID + "item." + ID + "smithing_template.desc", "A mysterious tablet that can be used to trim armor");
@@ -1485,25 +1486,25 @@ public class YTLangProvider extends FabricLanguageProvider {
         desc.add(YT_ID + "item." + EB_ID + "royalty_pottery_sherd.desc", "Fit for a queen!");
         desc.add(YT_ID + "item." + EB_ID + "ancient_pottery_sherd.desc", "Suffering leaves, suffering leaves");
         desc.add(YT_ID + "item." + EB_ID + "bitter_pottery_sherd.desc", "A mixture of dried spices- oh wait it's just paint...");
-        desc.add(YT_ID + "item." + EB_ID + "boin_pottery_sherd.desc", "A ceramic remnant with a currency painted on it");
-        desc.add(YT_ID + "item." + EB_ID + "bustling_pottery_sherd.desc", "A ceramic remnant with a fungus painted on it");
-        desc.add(YT_ID + "item." + EB_ID + "checkered_pottery_sherd.desc", "A ceramic remnant with a checkered pattern painted on it");
-        desc.add(YT_ID + "item." + EB_ID + "decay_pottery_sherd.desc", "A ceramic remnant with a wither skull painted on it");
-        desc.add(YT_ID + "item." + EB_ID + "destruction_pottery_sherd.desc", "A ceramic remnant with a horrible storm painted on it");
-        desc.add(YT_ID + "item." + EB_ID + "forwards_pottery_sherd.desc", "A ceramic remnant with an arrow painted on it");
-        desc.add(YT_ID + "item." + EB_ID + "hexxed_pottery_sherd.desc", "A ceramic remnant with a hex painted on it");
-        desc.add(YT_ID + "item." + EB_ID + "kitteh_pottery_sherd.desc", "A cewamic wemnant with a colwon thwee painted on it");
-        desc.add(YT_ID + "item." + EB_ID + "life_pottery_sherd.desc", "A ceramic remnant with an ankh painted on it");
-        desc.add(YT_ID + "item." + EB_ID + "mesmerize_pottery_sherd.desc", "A ceramic remnant with a mesmerizing eye painted on it");
-        desc.add(YT_ID + "item." + EB_ID + "portal_pottery_sherd.desc", "A ceramic remnant with a portal painted on it");
-        desc.add(YT_ID + "item." + EB_ID + "pottery_pottery_sherd.desc", "A ceramic remnant with a pot painted on it");
+        desc.add(YT_ID + "item." + EB_ID + "boin_pottery_sherd.desc", "A ceramic remnant with a currency carved on it");
+        desc.add(YT_ID + "item." + EB_ID + "bustling_pottery_sherd.desc", "A ceramic remnant with a fungus carved on it");
+        desc.add(YT_ID + "item." + EB_ID + "checkered_pottery_sherd.desc", "A ceramic remnant with a checkered pattern carved on it");
+        desc.add(YT_ID + "item." + EB_ID + "decay_pottery_sherd.desc", "A ceramic remnant with a wither skull carved on it");
+        desc.add(YT_ID + "item." + EB_ID + "destruction_pottery_sherd.desc", "A ceramic remnant with a horrible storm carved on it");
+        desc.add(YT_ID + "item." + EB_ID + "forwards_pottery_sherd.desc", "A ceramic remnant with an arrow carved on it");
+        desc.add(YT_ID + "item." + EB_ID + "hexxed_pottery_sherd.desc", "A ceramic remnant with a hex carved on it");
+        desc.add(YT_ID + "item." + EB_ID + "kitteh_pottery_sherd.desc", "A cewamic wemnant with a colwon thwee carved on it");
+        desc.add(YT_ID + "item." + EB_ID + "life_pottery_sherd.desc", "A ceramic remnant with an ankh carved on it");
+        desc.add(YT_ID + "item." + EB_ID + "mesmerize_pottery_sherd.desc", "A ceramic remnant with a mesmerizing eye carved on it");
+        desc.add(YT_ID + "item." + EB_ID + "portal_pottery_sherd.desc", "A ceramic remnant with a portal carved on it");
+        desc.add(YT_ID + "item." + EB_ID + "pottery_pottery_sherd.desc", "A ceramic remnant with a pot carved on it");
         desc.add(YT_ID + "item." + EB_ID + "ring_pottery_sherd.desc", "\"Tell em to make it count\"");
-        desc.add(YT_ID + "item." + EB_ID + "snout_pottery_sherd.desc", "A ceramic remnant with a snout painted on it");
-        desc.add(YT_ID + "item." + EB_ID + "sprite_pottery_sherd.desc", "A ceramic remnant with a-esprite painted on it");
-        desc.add(YT_ID + "item." + EB_ID + "twins_pottery_sherd.desc", "A ceramic remnant with twin hearts painted on it");
-        desc.add(YT_ID + "item." + EB_ID + "wrathful_pottery_sherd.desc", "A ceramic remnant with an ancient evil painted on it");
+        desc.add(YT_ID + "item." + EB_ID + "snout_pottery_sherd.desc", "A ceramic remnant with a snout carved on it");
+        desc.add(YT_ID + "item." + EB_ID + "sprite_pottery_sherd.desc", "A ceramic remnant with a-esprite carved on it");
+        desc.add(YT_ID + "item." + EB_ID + "twins_pottery_sherd.desc", "A ceramic remnant with twin hearts carved on it");
+        desc.add(YT_ID + "item." + EB_ID + "wrathful_pottery_sherd.desc", "A ceramic remnant with an ancient evil carved on it");
         desc.add(YT_ID + "item." + EB_ID + "is_that_pottery_sherd.desc", ":)");
-        desc.add(YT_ID + "item." + EB_ID + "kokos_bug_pottery_sherd.desc", "A ceramic remnant with a KOKOS BUG painted on it");
+        desc.add(YT_ID + "item." + EB_ID + "kokos_bug_pottery_sherd.desc", "A ceramic remnant with a KOKOS BUG carved on it");
         desc.add(YT_ID + "item." + EB_ID + "thief_pottery_sherd.desc", "A ceramic remnant with a thief painted on it");
 
         desc.add(YT_ID + "block." + EB_ID + "oak_mosaic.desc", "Fine wooden planks fancily carved from oak");
@@ -2085,24 +2086,23 @@ public class YTLangProvider extends FabricLanguageProvider {
         desc.add(YT_ID + "block." + EB_ID + "pink_almentra_brick_vertical_stairs.desc", "Soft vertical stairs constructed from pink almentra bricks");
         desc.add(YT_ID + "block." + EB_ID + "pink_almentra_brick_slab.desc", "Soft slabs constructed from pink almentra bricks");
 
-        //TODO: EXCESSIVE BUILDING ALMENTRA STATUES AFTER REMODELS ARE FINISHED
         desc.add(YT_ID + "block." + EB_ID + "almentra_statue.desc", "A statue of almentra carved into a cube");
         desc.add(YT_ID + "block." + EB_ID + "white_almentra_statue.desc", "A statue of white almentra carved into a heart");
         desc.add(YT_ID + "block." + EB_ID + "light_gray_almentra_statue.desc", "A statue of light gray almentra carved into a dice");
         desc.add(YT_ID + "block." + EB_ID + "gray_almentra_statue.desc", "A statue of gray almentra carved into a wither");
         desc.add(YT_ID + "block." + EB_ID + "black_almentra_statue.desc", "A statue of black almentra carved into a heart");
-        //desc.add(YT_ID + "block." + EB_ID + "brown_almentra_statue.desc", "A statue of brown almentra carved into a NA");
+        desc.add(YT_ID + "block." + EB_ID + "brown_almentra_statue.desc", "A statue of brown almentra carved into a snail");
         desc.add(YT_ID + "block." + EB_ID + "red_almentra_statue.desc", "A statue of red almentra carved into a bug");
-        //desc.add(YT_ID + "block." + EB_ID + "orange_almentra_statue.desc", "A statue of orange almentra carved into a pumpkin");
+        desc.add(YT_ID + "block." + EB_ID + "orange_almentra_statue.desc", "A statue of orange almentra carved into a pumpkin");
         desc.add(YT_ID + "block." + EB_ID + "yellow_almentra_statue.desc", "A statue of yellow almentra carved into a crown");
         desc.add(YT_ID + "block." + EB_ID + "lime_almentra_statue.desc", "A statue of lime almentra carved into a creeper");
-        //desc.add(YT_ID + "block." + EB_ID + "green_almentra_statue.desc", "A statue of green almentra carved into a NA");
-        //desc.add(YT_ID + "block." + EB_ID + "cyan_almentra_statue.desc", "A statue of cyan almentra carved into a fish");
+        desc.add(YT_ID + "block." + EB_ID + "green_almentra_statue.desc", "A statue of green almentra carved into a tree");
+        desc.add(YT_ID + "block." + EB_ID + "cyan_almentra_statue.desc", "A statue of cyan almentra carved into a fish");
         desc.add(YT_ID + "block." + EB_ID + "light_blue_almentra_statue.desc", "A statue of light blue almentra carved into a bench");
         desc.add(YT_ID + "block." + EB_ID + "blue_almentra_statue.desc", "A statue of blue almentra carved into an axolotl");
-        //desc.add(YT_ID + "block." + EB_ID + "purple_almentra_statue.desc", "A statue of purple almentra carved into a NA");
-        //desc.add(YT_ID + "block." + EB_ID + "magenta_almentra_statue.desc", "A statue of magenta almentra carved into a NA");
-        //desc.add(YT_ID + "block." + EB_ID + "pink_almentra_statue.desc", "A statue of pink almentra carved into a NA");
+        desc.add(YT_ID + "block." + EB_ID + "purple_almentra_statue.desc", "A statue of purple almentra carved into a trident");
+        desc.add(YT_ID + "block." + EB_ID + "magenta_almentra_statue.desc", "A statue of magenta almentra carved into a star");
+        desc.add(YT_ID + "block." + EB_ID + "pink_almentra_statue.desc", "A statue of pink almentra carved into a flower");
 
         desc.add(YT_ID + "block." + EB_ID + "polished_sandstone.desc", "A block of sandstone that has been polished");
         desc.add(YT_ID + "block." + EB_ID + "polished_sandstone_stairs.desc", "Smooth stairs constructed from polished sandstone");
@@ -2327,11 +2327,533 @@ public class YTLangProvider extends FabricLanguageProvider {
         desc.add(YT_ID + "block." + EB_ID + "waxed_oxidized_cut_copper_vertical_stairs.desc", "Metallic vertical stairs constructed from oxidized cut copper");
         desc.add(YT_ID + "block." + EB_ID + "logo_block.desc", "A great dog house!");
 
+        //APPLEDOG
+        desc.add(YT_ID + "item." + SP_ID + "frozen_porkchop.desc", "A frigid porkchop that freezes the consumer");
+        desc.add(YT_ID + "item." + SP_ID + "snow_pig_spawn_egg.desc", "A pig that has been frozen by powdered snow");
+
+        //SNOW PIG
+        desc.add(YT_ID + "item." + SP_ID + "dogapple.desc", "A happy dog that barks at you!");
+        desc.add(YT_ID + "item." + SP_ID + "appledog_spawn_egg.desc", "APPLEDOG AT -255 69");
+
         //ARTS AND CRAFTS
         desc.add(YT_ID + "item." + AC_ID + "red_paintbrush.desc", "§4...so pick up your brush, and paint §4the world §4§lRED");
 
-        //SNOW PIG
-        desc.add(YT_ID + "item." + SP_ID + "frozen_porkchop.desc", "A frigid porkchop that freezes the consumer");
-        desc.add(YT_ID + "item." + SP_ID + "snow_pig_spawn_egg.desc", "A pig that has been frozen by powdered snow");
+//        desc.add(YT_ID + "item." + AC_ID + "bleachdew.desc", "Can be used to revert dyed blocks to their original state");
+//        desc.add(YT_ID + "item." + AC_ID + "bleachdew_paintbrush.desc", "...so pick up your brush, AND BLEACH ALL THE SHEEP");
+//        desc.add(YT_ID + "block." + AC_ID + "bleached_wool.desc", "A soft block that has been bleached, blocks vibrations");
+//        desc.add(YT_ID + "block." + AC_ID + "bleached_carpet.desc", "A soft cover that has been bleached");
+//        desc.add(YT_ID + "block." + AC_ID + "bleached_bed.desc", "Sleeping with bleach? This can't be healthy");
+//        desc.add(YT_ID + "block." + AC_ID + "bleached_concrete.desc", "Concrete powder that has been hardened and bleached");
+//        desc.add(YT_ID + "block." + AC_ID + "bleached_concrete_powder.desc", "A mixture of gravel and sand that has been bleached");
+//        desc.add(YT_ID + "block." + AC_ID + "bleached_chalk.desc", "A pastel block that has been bleached");
+//        desc.add(YT_ID + "block." + AC_ID + "glazed_terracotta.desc", "A terracotta block that has been fired");
+//
+//        desc.add(YT_ID + "item." + AC_ID + "pottery_sherd.desc", "A ceramic remnant");
+//        desc.add(YT_ID + "item." + AC_ID + "gateway_pottery_sherd.desc", "A ceramic remnant with a portal carved on it");
+//        desc.add(YT_ID + "item." + AC_ID + "finale_pottery_sherd.desc", "A ceramic remnant with an island carved on it");
+//        desc.add(YT_ID + "item." + AC_ID + "roll_pottery_sherd.desc", "GAMBALE GAMBALE");
+//        desc.add(YT_ID + "item." + AC_ID + "ruined_pottery_sherd.desc", "A ceramic remnant with many cracks in it");
+//
+//        desc.add(YT_ID + "block." + ACC_ID + "cork_table.desc", "Someone cooked here...");
+//        desc.add(YT_ID + "block." + AC_ID + "cork.desc", "Sadly you cannot fly in the rain with it");
+//        desc.add(YT_ID + "block." + AC_ID + "smooth_cork.desc", "Cork that has been smoothened... and you still can't fly in rain with it");
+//        desc.add(YT_ID + "block." + AC_ID + "cork_log.desc", "A soft log from a cork tree");
+//        desc.add(YT_ID + "block." + AC_ID + "stripped_cork_log.desc", "A cork log that has been stripped- by accident?");
+//        desc.add(YT_ID + "block." + AC_ID + "cork_wood.desc", "A soft piece of wood from a cork log");
+//        desc.add(YT_ID + "block." + AC_ID + "stripped_cork_wood.desc", "A cork wood that has been stripped- by accident?");
+//        desc.add(YT_ID + "block." + AC_ID + "cork_sapling.desc", "A young plant that will grow into a cork tree");
+//        desc.add(YT_ID + "block." + AC_ID + "cork_planks.desc", "Soft planks constructed from cork");
+//        desc.add(YT_ID + "block." + AC_ID + "cork_stairs.desc", "Soft wooden stairs constructed from cork");
+//        desc.add(YT_ID + "block." + AC_ID + "cork_slab.desc", "Soft wooden slabs constructed from cork");
+//        desc.add(YT_ID + "block." + AC_ID + "cork_pressure_plate.desc", "Produces a redstone signal when ANY entity makes contact with it");
+//        desc.add(YT_ID + "block." + AC_ID + "cork_button.desc", "Can be pushed by players, arrows, and tridents, stays pushed for 1.5 seconds");
+//        desc.add(YT_ID + "block." + AC_ID + "cork_leaves.desc", "Foliage from a cork tree");
+//        desc.add(YT_ID + "block." + AC_ID + "cork_fence.desc", "Too high to jump over");
+//        desc.add(YT_ID + "block." + AC_ID + "cork_door.desc", "Make yourself feel at home... until it floats away-");
+//        desc.add(YT_ID + "block." + AC_ID + "cork_trapdoor.desc", "Commonly used for everything BUT traps");
+//        desc.add(YT_ID + "block." + AC_ID + "cork_fence_gate.desc", "Can be opened, connects with fences and walls");
+//        desc.add(YT_ID + "block." + AC_ID + "cork_sign.desc", "Can be written on, you have been warned that text may float away...");
+//        desc.add(YT_ID + "block." + AC_ID + "cork_hanging_sign.desc", "Can be written on, you have been warned that text may float away...");
+//        desc.add(YT_ID + "item." + AC_ID + "cork_boat.desc", "Let's sail the seven seas!");
+//        desc.add(YT_ID + "item." + AC_ID + "cork_chest_boat.desc", "Can be used as portable storage at the cost of a seat");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "gypsum.desc", "A sedimentary rock found in clusters throughout deserts");
+//        desc.add(YT_ID + "block." + AC_ID + "gypsum_stairs.desc", "Rough stairs constructed from gypsum");
+//        desc.add(YT_ID + "block." + AC_ID + "gypsum_slab.desc", "Rough slabs constructed from gypsum");
+//        desc.add(YT_ID + "block." + AC_ID + "gypsum_wall.desc", "A rough wall that can connect to other walls, too high to jump over");
+//        desc.add(YT_ID + "block." + AC_ID + "polished_gypsum.desc", "A block of gypsum that has been polished");
+//        desc.add(YT_ID + "block." + AC_ID + "polished_gypsum_stairs.desc", "Smooth stairs constructed from polished gypsum");
+//        desc.add(YT_ID + "block." + AC_ID + "polished_gypsum_slab.desc", "Smooth slabs constructed from polished gypsum");
+//        desc.add(YT_ID + "block." + AC_ID + "polished_gypsum_wall.desc", "A smooth wall that can connect to other walls, too high to jump over");
+//        desc.add(YT_ID + "block." + AC_ID + "gypsum_bricks.desc", "Gypsum compacted into bricks");
+//        desc.add(YT_ID + "block." + AC_ID + "gypsum_brick_stairs.desc", "Rough stairs constructed from gypsum bricks");
+//        desc.add(YT_ID + "block." + AC_ID + "gypsum_brick_slab.desc", "Rough slabs constructed from gypsum bricks");
+//        desc.add(YT_ID + "block." + AC_ID + "gypsum_brick_wall.desc", "A rough wall that can connect to other walls, too high to jump over");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "white_chalk.desc", "A white pastel block found in clusters in mountains");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_chalk.desc", "A orange pastel block found in clusters in mountains");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_chalk.desc", "A magenta pastel block found in clusters in mountains");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_chalk.desc", "A light blue pastel block found in clusters in mountains");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_chalk.desc", "A yellow pastel block found in clusters in mountains");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_chalk.desc", "A lime pastel block found in clusters in mountains");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_chalk.desc", "A pink pastel block found in clusters in mountains");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_chalk.desc", "A gray pastel block found in clusters in mountains");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_chalk.desc", "A light gray pastel block found in clusters in mountains");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_chalk.desc", "A cyan pastel block found in clusters in mountains");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_chalk.desc", "A purple pastel block found in clusters in mountains");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_chalk.desc", "A blue pastel block found in clusters in mountains");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_chalk.desc", "A brown pastel block found in clusters in mountains");
+//        desc.add(YT_ID + "block." + AC_ID + "green_chalk.desc", "A green pastel block found in clusters in mountains");
+//        desc.add(YT_ID + "block." + AC_ID + "red_chalk.desc", "A red pastel block found in clusters in mountains");
+//        desc.add(YT_ID + "block." + AC_ID + "black_chalk.desc", "A black pastel block found in clusters in mountains");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "soapstone.desc", "A metamorphic rock found in clusters near aquifers");
+//        desc.add(YT_ID + "block." + AC_ID + "soapstone_stairs.desc", "Soggy stairs constructed from soapstone");
+//        desc.add(YT_ID + "block." + AC_ID + "soapstone_slab.desc", "Soggy slabs constructed from soapstone");
+//        desc.add(YT_ID + "block." + AC_ID + "soapstone_wall.desc", "Soap wall");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "white_soapstone.desc", "White soap bar but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "white_soapstone_stairs.desc", "White soap bar stairs but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "white_soapstone_slab.desc", "White soap bar slab but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "white_soapstone_wall.desc", "White soap bar wall but more stone than soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "orange_soapstone.desc", "Orange soap bar but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_soapstone_stairs.desc", "Orange soap bar stairs but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_soapstone_slab.desc", "Orange soap bar slab but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_soapstone_wall.desc", "Orange soap bar wall but more stone than soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_soapstone.desc", "Magenta soap bar but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_soapstone_stairs.desc", "Magenta soap bar stairs but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_soapstone_slab.desc", "Magenta soap bar slab but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_soapstone_wall.desc", "Magenta soap bar wall but more stone than soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_soapstone.desc", "Light Blue soap bar but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_soapstone_stairs.desc", "Light Blue soap bar stairs but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_soapstone_slab.desc", "Light Blue soap bar slab but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_soapstone_wall.desc", "Light Blue soap bar wall but more stone than soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_soapstone.desc", "Yellow soap bar but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_soapstone_stairs.desc", "Yellow soap bar stairs but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_soapstone_slab.desc", "Yellow soap bar slab but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_soapstone_wall.desc", "Yellow soap bar wall but more stone than soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "lime_soapstone.desc", "Lime soap bar but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_soapstone_stairs.desc", "Lime soap bar stairs but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_soapstone_slab.desc", "Lime soap bar slab but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_soapstone_wall.desc", "lime soap bar wall but more stone than soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "pink_soapstone.desc", "Pink soap bar but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_soapstone_stairs.desc", "Pink soap bar stairs but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_soapstone_slab.desc", "Pink soap bar slab but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_soapstone_wall.desc", "Pink soap bar wall but more stone than soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "gray_soapstone.desc", "Gray soap bar but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_soapstone_stairs.desc", "Gray soap bar stairs but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_soapstone_slab.desc", "Gray soap bar slab but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_soapstone_wall.desc", "Gray soap bar wall but more stone than soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_soapstone.desc", "Light Gray soap bar but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_soapstone_stairs.desc", "Light Gray soap bar stairs but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_soapstone_slab.desc", "Light Gray soap bar slab but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_soapstone_wall.desc", "Light Gray soap bar wall but more stone than soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_soapstone.desc", "Cyan soap bar but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_soapstone_stairs.desc", "Cyan soap bar stairs but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_soapstone_slab.desc", "Cyan soap bar slab but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_soapstone_wall.desc", "Cyan soap bar wall but more stone than soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "purple_soapstone.desc", "Purple soap bar but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_soapstone_stairs.desc", "Purple soap bar stairs but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_soapstone_slab.desc", "Purple soap bar slab but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_soapstone_wall.desc", "Purple soap bar wall but more stone than soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "blue_soapstone.desc", "Blue soap bar but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_soapstone_stairs.desc", "Blue soap bar stairs but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_soapstone_slab.desc", "Blue soap bar slab but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_soapstone_wall.desc", "Blue soap bar wall but more stone than soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "brown_soapstone.desc", "Brown soap bar but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_soapstone_stairs.desc", "Brown soap bar stairs but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_soapstone_slab.desc", "Brown soap bar slab but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_soapstone_wall.desc", "Brown soap bar wall but more stone than soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "green_soapstone.desc", "Green soap bar but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "green_soapstone_stairs.desc", "Green soap bar stairs but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "green_soapstone_slab.desc", "Green soap bar slab but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "green_soapstone_wall.desc", "Green soap bar wall but more stone than soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "red_soapstone.desc", "Red soap bar but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "red_soapstone_stairs.desc", "Red soap bar stairs but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "red_soapstone_slab.desc", "Red soap bar slab but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "red_soapstone_wall.desc", "Red soap bar wall but more stone than soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "black_soapstone.desc", "Black soap bar but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "black_soapstone_stairs.desc", "Black soap bar stairs but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "black_soapstone_slab.desc", "Black soap bar slab but more stone than soap");
+//        desc.add(YT_ID + "block." + AC_ID + "black_soapstone_wall.desc", "Black soap bar wall but more stone than soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "polished_soapstone.desc", "I remember someone asking for this feature");
+//        desc.add(YT_ID + "block." + AC_ID + "polished_soapstone_stairs.desc", "The cleanest stairs you will ever see");
+//        desc.add(YT_ID + "block." + AC_ID + "polished_soapstone_slab.desc", "The cleanest slab you will ever see");
+//        desc.add(YT_ID + "block." + AC_ID + "polished_soapstone_wall.desc", "The cleanest wall you will ever see");
+//        desc.add(YT_ID + "block." + AC_ID + "white_polished_soapstone.desc", "White Polished Soap");
+//        desc.add(YT_ID + "block." + AC_ID + "white_polished_soapstone_stairs.desc", "White Polished Soap Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "white_polished_soapstone_slab.desc", "White Polished Soap Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "white_polished_soapstone_wall.desc", "White Polished Soap Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_polished_soapstone.desc", "Orange Polished Soap");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_polished_soapstone_stairs.desc", "Orange Polished Soap Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_polished_soapstone_slab.desc", "Orange Polished Soap Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_polished_soapstone_wall.desc", "Orange Polished Soap Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_polished_soapstone.desc", "Magenta Polished Soap");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_polished_soapstone_stairs.desc", "Magenta Polished Soap Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_polished_soapstone_slab.desc", "Magenta Polished Soap Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_polished_soapstone_wall.desc", "Magenta Polished Soap Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_polished_soapstone.desc", "Light Blue Polished Soap");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_polished_soapstone_stairs.desc", "Light Blue Polished Soap Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_polished_soapstone_slab.desc", "Light Blue Polished Soap Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_polished_soapstone_wall.desc", "Light Blue Polished Soap Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_polished_soapstone.desc", "Yellow Polished Soap");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_polished_soapstone_stairs.desc", "Yellow Polished Soap Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_polished_soapstone_slab.desc", "Yellow Polished Soap Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_polished_soapstone_wall.desc", "Yellow Polished Soap Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_polished_soapstone.desc", "Lime Polished Soap");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_polished_soapstone_stairs.desc", "Lime Polished Soap Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_polished_soapstone_slab.desc", "Lime Polished Soap Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_polished_soapstone_wall.desc", "Lime Polished Soap Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_polished_soapstone.desc", "Pink Polished Soap");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_polished_soapstone_stairs.desc", "Pink Polished Soap Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_polished_soapstone_slab.desc", "Pink Polished Soap Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_polished_soapstone_wall.desc", "Pink Polished Soap Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_polished_soapstone.desc", "Gray Polished Soap");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_polished_soapstone_stairs.desc", "Gray Polished Soap Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_polished_soapstone_slab.desc", "Gray Polished Soap Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_polished_soapstone_wall.desc", "Gray Polished Soap Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_polished_soapstone.desc", "Light Gray Polished Soap");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_polished_soapstone_stairs.desc", "Light Gray Polished Soap Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_polished_soapstone_slab.desc", "Light Gray Polished Soap Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_polished_soapstone_wall.desc", "Light Gray Polished Soap Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_polished_soapstone.desc", "Cyan Polished Soap");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_polished_soapstone_stairs.desc", "Cyan Polished Soap Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_polished_soapstone_slab.desc", "Cyan Polished Soap Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_polished_soapstone_wall.desc", "Cyan Polished Soap Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_polished_soapstone.desc", "Purple Polished Soap");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_polished_soapstone_stairs.desc", "Purple Polished Soap Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_polished_soapstone_slab.desc", "Purple Polished Soap Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_polished_soapstone_wall.desc", "Purple Polished Soap Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_polished_soapstone.desc", "Blue Polished Soap");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_polished_soapstone_stairs.desc", "Blue Polished Soap Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_polished_soapstone_slab.desc", "Blue Polished Soap Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_polished_soapstone_wall.desc", "Blue Polished Soap Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_polished_soapstone.desc", "Brown Polished Soap");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_polished_soapstone_stairs.desc", "Brown Polished Soap Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_polished_soapstone_slab.desc", "Brown Polished Soap Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_polished_soapstone_wall.desc", "Brown Polished Soap Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "green_polished_soapstone.desc", "Green Polished Soap");
+//        desc.add(YT_ID + "block." + AC_ID + "green_polished_soapstone_stairs.desc", "Green Polished Soap Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "green_polished_soapstone_slab.desc", "Green Polished Soap Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "green_polished_soapstone_wall.desc", "Green Polished Soap Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "red_polished_soapstone.desc", "Red Polished Soap");
+//        desc.add(YT_ID + "block." + AC_ID + "red_polished_soapstone_stairs.desc", "Red Polished Soap Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "red_polished_soapstone_slab.desc", "Red Polished Soap Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "red_polished_soapstone_wall.desc", "Red Polished Soap Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "black_polished_soapstone.desc", "Black Polished Soap");
+//        desc.add(YT_ID + "block." + AC_ID + "black_polished_soapstone_stairs.desc", "Black Polished Soap Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "black_polished_soapstone_slab.desc", "Black Polished Soap Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "black_polished_soapstone_wall.desc", "Black Polished Soap Wall");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "soapstone_bricks.desc", "People keep telling me these look like tiles instead of bricks");
+//        desc.add(YT_ID + "block." + AC_ID + "soapstone_brick_slab.desc", "Soapstone Tile Slab ,(");
+//        desc.add(YT_ID + "block." + AC_ID + "soapstone_brick_stairs.desc", "Soapstone Tile Stairs ,(");
+//        desc.add(YT_ID + "block." + AC_ID + "soapstone_brick_wall.desc", "A wall made out of Soapstone Bricks");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "white_soapstone_bricks.desc", "Bricks made out of white soap");
+//        desc.add(YT_ID + "block." + AC_ID + "white_soapstone_brick_stairs.desc", "Brick Stairs made out of white soap");
+//        desc.add(YT_ID + "block." + AC_ID + "white_soapstone_brick_slab.desc", "Brick Slab made out of white soap");
+//        desc.add(YT_ID + "block." + AC_ID + "white_soapstone_brick_wall.desc", "Brick Wall made out of white soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "orange_soapstone_bricks.desc", "Bricks made out of orange soap");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_soapstone_brick_stairs.desc", "Brick Stairs made out of orange soap");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_soapstone_brick_slab.desc", "Brick Slab made out of orange soap");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_soapstone_brick_wall.desc", "Brick Wall made out of orange soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_soapstone_bricks.desc", "Bricks made out of magenta soap");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_soapstone_brick_stairs.desc", "Brick Stairs made out of magenta soap");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_soapstone_brick_slab.desc", "Brick Slab made out of magenta soap");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_soapstone_brick_wall.desc", "Brick Wall made out of magenta soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_soapstone_bricks.desc", "Bricks made out of light blue soap");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_soapstone_brick_stairs.desc", "Brick Stairs made out of light blue soap");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_soapstone_brick_slab.desc", "Brick Slab made out of light blue soap");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_soapstone_brick_wall.desc", "Brick Wall made out of light blue soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_soapstone_bricks.desc", "Bricks made out of yellow soap");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_soapstone_brick_stairs.desc", "Brick Stairs made out of yellow soap");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_soapstone_brick_slab.desc", "Brick Slab made out of yellow soap");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_soapstone_brick_wall.desc", "Brick Wall made out of yellow soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "lime_soapstone_bricks.desc", "Bricks made out of lime soap");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_soapstone_brick_stairs.desc", "Brick Stairs made out of lime soap");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_soapstone_brick_slab.desc", "Brick Slab made out of lime soap");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_soapstone_brick_wall.desc", "Brick Wall made out of lime soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "pink_soapstone_bricks.desc", "Bricks made out of pink soap");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_soapstone_brick_stairs.desc", "Brick Stairs made out of pink soap");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_soapstone_brick_slab.desc", "Brick Slab made out of pink soap");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_soapstone_brick_wall.desc", "Brick Wall made out of pink soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "gray_soapstone_bricks.desc", "Bricks made out of gray soap");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_soapstone_brick_stairs.desc", "Brick Stairs made out of gray soap");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_soapstone_brick_slab.desc", "Brick Slab made out of gray soap");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_soapstone_brick_wall.desc", "Brick Wall made out of gray soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_soapstone_bricks.desc", "Bricks made out of light gray soap");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_soapstone_brick_stairs.desc", "Brick Stairs made out of light gray soap");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_soapstone_brick_slab.desc", "Brick Slab made out of light gray soap");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_soapstone_brick_wall.desc", "Brick Wall made out of light gray soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_soapstone_bricks.desc", "Bricks made out of cyan soap");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_soapstone_brick_stairs.desc", "Brick Stairs made out of cyan soap");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_soapstone_brick_slab.desc", "Brick Slab made out of cyan soap");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_soapstone_brick_wall.desc", "Brick Wall made out of cyan soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "purple_soapstone_bricks.desc", "Bricks made out of purple soap");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_soapstone_brick_stairs.desc", "Brick Stairs made out of purple soap");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_soapstone_brick_slab.desc", "Brick Slab made out of purple soap");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_soapstone_brick_wall.desc", "Brick Wall made out of purple soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "blue_soapstone_bricks.desc", "Bricks made out of blue soap");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_soapstone_brick_stairs.desc", "Brick Stairs made out of blue soap");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_soapstone_brick_slab.desc", "Brick Slab made out of blue soap");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_soapstone_brick_wall.desc", "Brick Wall made out of blue soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "brown_soapstone_bricks.desc", "Bricks made out of brown soap");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_soapstone_brick_stairs.desc", "Brick Stairs made out of brown soap");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_soapstone_brick_slab.desc", "Brick Slab made out of brown soap");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_soapstone_brick_wall.desc", "Brick Wall made out of brown soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "green_soapstone_bricks.desc", "Bricks made out of green soap");
+//        desc.add(YT_ID + "block." + AC_ID + "green_soapstone_brick_stairs.desc", "Brick Stairs made out of green soap");
+//        desc.add(YT_ID + "block." + AC_ID + "green_soapstone_brick_slab.desc", "Brick Slab made out of green soap");
+//        desc.add(YT_ID + "block." + AC_ID + "green_soapstone_brick_wall.desc", "Brick Wall made out of green soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "red_soapstone_bricks.desc", "Bricks made out of red soap");
+//        desc.add(YT_ID + "block." + AC_ID + "red_soapstone_brick_stairs.desc", "Brick Stairs made out of red soap");
+//        desc.add(YT_ID + "block." + AC_ID + "red_soapstone_brick_slab.desc", "Brick Slab made out of red soap");
+//        desc.add(YT_ID + "block." + AC_ID + "red_soapstone_brick_wall.desc", "Brick Wall made out of red soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "black_soapstone_bricks.desc", "Bricks made out of black soap");
+//        desc.add(YT_ID + "block." + AC_ID + "black_soapstone_brick_stairs.desc", "Brick Stairs made out of black soap");
+//        desc.add(YT_ID + "block." + AC_ID + "black_soapstone_brick_slab.desc", "Brick Slab made out of black soap");
+//        desc.add(YT_ID + "block." + AC_ID + "black_soapstone_brick_wall.desc", "Brick Wall made out of black soap");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "plaster.desc", "Put Gypsum in a furnace and you can get some plaster!");
+//        desc.add(YT_ID + "block." + AC_ID + "white_plaster.desc", "Plaster but dyed white");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_plaster.desc", "Plaster but dyed orange");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_plaster.desc", "Plaster but dyed magenta");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_plaster.desc", "Plaster but dyed light blue");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_plaster.desc", "Plaster but dyed yellow");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_plaster.desc", "Plaster but dyed lime");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_plaster.desc", "Plaster but dyed pink");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_plaster.desc", "Plaster but dyed gray");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_plaster.desc", "Plaster but dyed light gray");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_plaster.desc", "Plaster but dyed cyan");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_plaster.desc", "Plaster but dyed purple");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_plaster.desc", "Plaster but dyed blue");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_plaster.desc", "Plaster but dyed brown");
+//        desc.add(YT_ID + "block." + AC_ID + "green_plaster.desc", "Plaster but dyed green");
+//        desc.add(YT_ID + "block." + AC_ID + "red_plaster.desc", "Plaster but dyed red");
+//        desc.add(YT_ID + "block." + AC_ID + "black_plaster.desc", "Plaster but dyed black");
+//
+//        desc.add(YT_ID + "item." + AC_ID + "white_paintbrush.desc", "§f...so pick up your brush, and paint the canvas §lWHITE");
+//        desc.add(YT_ID + "item." + AC_ID + "orange_paintbrush.desc", "§6...so pick up your brush, and paint the canvas §lORANGE");
+//        desc.add(YT_ID + "item." + AC_ID + "magenta_paintbrush.desc", "§d...so pick up your brush, and paint the canvas §lMAGENTA");
+//        desc.add(YT_ID + "item." + AC_ID + "light_blue_paintbrush.desc", "§b...so pick up your brush, and paint the canvas §lLIGHT BLUE");
+//        desc.add(YT_ID + "item." + AC_ID + "yellow_paintbrush.desc", "§e...so pick up your brush, and paint the canvas §lYELLOW");
+//        desc.add(YT_ID + "item." + AC_ID + "lime_paintbrush.desc", "§a...so pick up your brush, and paint the canvas §lLIME");
+//        desc.add(YT_ID + "item." + AC_ID + "pink_paintbrush.desc", "§d...so pick up your brush, and paint the canvas §lPINK");
+//        desc.add(YT_ID + "item." + AC_ID + "gray_paintbrush.desc", "§8...so pick up your brush, and paint the canvas §lGRAY");
+//        desc.add(YT_ID + "item." + AC_ID + "light_gray_paintbrush.desc", "§7...so pick up your brush, and paint the canvas §lLIGHT GRAY");
+//        desc.add(YT_ID + "item." + AC_ID + "cyan_paintbrush.desc", "§3...so pick up your brush, and paint the canvas §lCYAN");
+//        desc.add(YT_ID + "item." + AC_ID + "purple_paintbrush.desc", "§5...so pick up your brush, and paint the canvas §lPURPLE");
+//        desc.add(YT_ID + "item." + AC_ID + "blue_paintbrush.desc", "§9...so pick up your brush, and paint the canvas §lBLUE");
+//        desc.add(YT_ID + "item." + AC_ID + "brown_paintbrush.desc", "§6...so pick up your brush, and paint the canvas §lBROWN");
+//        desc.add(YT_ID + "item." + AC_ID + "green_paintbrush.desc", "§2...so pick up your brush, and paint the canvas §lGREEN");
+//        desc.add(YT_ID + "item." + AC_ID + "red_paintbrush.desc", "§4...so pick up your brush, and paint the world §lRED");
+//        desc.add(YT_ID + "item." + AC_ID + "black_paintbrush.desc", "§0...so pick up your brush, and paint the canvas §lBLACK");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "white_flower_pot.desc", "A small white pot to hold flowers in");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_flower_pot.desc", "A small orange pot to hold flowers in");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_flower_pot.desc", "A small magenta pot to hold flowers in");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_flower_pot.desc", "A small light blue pot to hold flowers in");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_flower_pot.desc", "A small yellow pot to hold flowers in");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_flower_pot.desc", "A small lime pot to hold flowers in");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_flower_pot.desc", "A small pink pot to hold flowers in");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_flower_pot.desc", "A small gray pot to hold flowers in");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_flower_pot.desc", "A small light gray pot to hold flowers in");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_flower_pot.desc", "A small cyan pot to hold flowers in");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_flower_pot.desc", "A small purple pot to hold flowers in");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_flower_pot.desc", "A small blue pot to hold flowers in");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_flower_pot.desc", "A small brown pot to hold flowers in");
+//        desc.add(YT_ID + "block." + AC_ID + "green_flower_pot.desc", "A small green pot to hold flowers in");
+//        desc.add(YT_ID + "block." + AC_ID + "red_flower_pot.desc", "A small red pot to hold flowers in");
+//        desc.add(YT_ID + "block." + AC_ID + "black_flower_pot.desc", "A small black pot to hold flowers in");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "white_decorated_pot.desc", "A white ceramic pot that can be decorated using sherds");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_decorated_pot.desc", "A orange ceramic pot that can be decorated using sherds");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_decorated_pot.desc", "A magenta ceramic pot that can be decorated using sherds");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_decorated_pot.desc", "A light blue ceramic pot that can be decorated using sherds");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_decorated_pot.desc", "A yellow ceramic pot that can be decorated using sherds");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_decorated_pot.desc", "A lime ceramic pot that can be decorated using sherds");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_decorated_pot.desc", "A pink ceramic pot that can be decorated using sherds");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_decorated_pot.desc", "A gray ceramic pot that can be decorated using sherds");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_decorated_pot.desc", "A light gray ceramic pot that can be decorated using sherds");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_decorated_pot.desc", "A cyan ceramic pot that can be decorated using sherds");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_decorated_pot.desc", "A purple ceramic pot that can be decorated using sherds");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_decorated_pot.desc", "A blue ceramic pot that can be decorated using sherds");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_decorated_pot.desc", "A brown ceramic pot that can be decorated using sherds");
+//        desc.add(YT_ID + "block." + AC_ID + "green_decorated_pot.desc", "A green ceramic pot that can be decorated using sherds");
+//        desc.add(YT_ID + "block." + AC_ID + "red_decorated_pot.desc", "A red ceramic pot that can be decorated using sherds");
+//        desc.add(YT_ID + "block." + AC_ID + "black_decorated_pot.desc", "A black ceramic pot that can be decorated using sherds");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "white_mud_bricks.desc", "Who makes a dyed block set last minute? Us, we did");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_mud_bricks.desc", "Who makes a dyed block set last minute? Us, we did");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_mud_bricks.desc", "Who makes a dyed block set last minute? Us, we did");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_mud_bricks.desc", "Who makes a dyed block set last minute? Us, we did");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_mud_bricks.desc", "Who makes a dyed block set last minute? Us, we did");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_mud_bricks.desc", "Who makes a dyed block set last minute? Us, we did");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_mud_bricks.desc", "Who makes a dyed block set last minute? Us, we did");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_mud_bricks.desc", "Who makes a dyed block set last minute? Us, we did");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_mud_bricks.desc", "Who makes a dyed block set last minute? Us, we did");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_mud_bricks.desc", "Who makes a dyed block set last minute? Us, we did");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_mud_bricks.desc", "Who makes a dyed block set last minute? Us, we did");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_mud_bricks.desc", "Who makes a dyed block set last minute? Us, we did");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_mud_bricks.desc", "Who makes a dyed block set last minute? Us, we did");
+//        desc.add(YT_ID + "block." + AC_ID + "green_mud_bricks.desc", "Who makes a dyed block set last minute? Us, we did");
+//        desc.add(YT_ID + "block." + AC_ID + "red_mud_bricks.desc", "Who makes a dyed block set last minute? Us, we did");
+//        desc.add(YT_ID + "block." + AC_ID + "black_mud_bricks.desc", "Who makes a dyed block set last minute? Us, we did");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "white_mud_brick_stairs.desc", "Don't fall you may hurt the White Mud Brick Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_mud_brick_stairs.desc", "Don't fall you may hurt the Orange Mud Brick Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_mud_brick_stairs.desc", "Don't fall you may hurt the Magenta Mud Brick Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_mud_brick_stairs.desc", "Don't fall you may hurt the Light Blue Mud Brick Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_mud_brick_stairs.desc", "Don't fall you may hurt the Yellow Mud Brick Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_mud_brick_stairs.desc", "Don't fall you may hurt the Lime Mud Brick Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_mud_brick_stairs.desc", "Don't fall you may hurt the Pink Mud Brick Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_mud_brick_stairs.desc", "Don't fall you may hurt the Gray Mud Brick Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_mud_brick_stairs.desc", "Don't fall you may hurt the Light Gray Mud Brick Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_mud_brick_stairs.desc", "Don't fall you may hurt the Cyan Mud Brick Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_mud_brick_stairs.desc", "Don't fall you may hurt the Purple Mud Brick Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_mud_brick_stairs.desc", "Don't fall you may hurt the Blue Mud Brick Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_mud_brick_stairs.desc", "Don't fall you may hurt the Brown Mud Brick Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "green_mud_brick_stairs.desc", "Don't fall you may hurt the Green Mud Brick Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "red_mud_brick_stairs.desc", "Don't fall you may hurt the Red Mud Brick Stairs");
+//        desc.add(YT_ID + "block." + AC_ID + "black_mud_brick_stairs.desc", "Don't fall you may hurt the Black Mud Brick Stairs");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "white_mud_brick_slab.desc", "Don't trip over my White Mud Brick Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_mud_brick_slab.desc", "Don't trip over my Orange Mud Brick Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_mud_brick_slab.desc", "Don't trip over my Magenta Mud Brick Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_mud_brick_slab.desc", "Don't trip over my Light Blue Mud Brick Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_mud_brick_slab.desc", "Don't trip over my Yellow Mud Brick Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_mud_brick_slab.desc", "Don't trip over my Lime Mud Brick Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_mud_brick_slab.desc", "Don't trip over my Pink Mud Brick Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_mud_brick_slab.desc", "Don't trip over my Gray Mud Brick Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_mud_brick_slab.desc", "Don't trip over my Light Gray Mud Brick Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_mud_brick_slab.desc", "Don't trip over my Cyan Mud Brick Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_mud_brick_slab.desc", "Don't trip over my Purple Mud Brick Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_mud_brick_slab.desc", "Don't trip over my Blue Mud Brick Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_mud_brick_slab.desc", "Don't trip over my Brown Mud Brick Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "green_mud_brick_slab.desc", "Don't trip over my Green Mud Brick Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "red_mud_brick_slab.desc", "Don't trip over my Red Mud Brick Slab");
+//        desc.add(YT_ID + "block." + AC_ID + "black_mud_brick_slab.desc", "Don't trip over my Black Mud Brick Slab");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "white_mud_brick_wall.desc", "You won't be able to jump over my White Mud Brick Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_mud_brick_wall.desc", "You won't be able to jump over my Orange Mud Brick Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_mud_brick_wall.desc", "You won't be able to jump over my Magenta Mud Brick Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_mud_brick_wall.desc", "You won't be able to jump over my Light Blue Mud Brick Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_mud_brick_wall.desc", "You won't be able to jump over my Yellow Mud Brick Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_mud_brick_wall.desc", "You won't be able to jump over my Lime Mud Brick Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_mud_brick_wall.desc", "You won't be able to jump over my Pink Mud Brick Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_mud_brick_wall.desc", "You won't be able to jump over my Gray Mud Brick Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_mud_brick_wall.desc", "You won't be able to jump over my Light Gray Mud Brick Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_mud_brick_wall.desc", "You won't be able to jump over my Cyan Mud Brick Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_mud_brick_wall.desc", "You won't be able to jump over my Purple Mud Brick Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_mud_brick_wall.desc", "You won't be able to jump over my Blue Mud Brick Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_mud_brick_wall.desc", "You won't be able to jump over my Brown Mud Brick Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "green_mud_brick_wall.desc", "You won't be able to jump over my Green Mud Brick Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "red_mud_brick_wall.desc", "You won't be able to jump over my Red Mud Brick Wall");
+//        desc.add(YT_ID + "block." + AC_ID + "black_mud_brick_wall.desc", "You won't be able to jump over my Black Mud Brick Wall");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "white_terracotta_shingles.desc", "Perfect for building roofs!");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_terracotta_shingles.desc", "Perfect for building roofs!");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_terracotta_shingles.desc", "Perfect for building roofs!");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_terracotta_shingles.desc", "Perfect for building roofs!");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_terracotta_shingles.desc", "Perfect for building roofs!");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_terracotta_shingles.desc", "Perfect for building roofs!");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_terracotta_shingles.desc", "Perfect for building roofs!");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_terracotta_shingles.desc", "Perfect for building roofs!");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_terracotta_shingles.desc", "Perfect for building roofs!");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_terracotta_shingles.desc", "Perfect for building roofs!");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_terracotta_shingles.desc", "Perfect for building roofs!");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_terracotta_shingles.desc", "Perfect for building roofs!");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_terracotta_shingles.desc", "Perfect for building roofs!");
+//        desc.add(YT_ID + "block." + AC_ID + "green_terracotta_shingles.desc", "Perfect for building roofs!");
+//        desc.add(YT_ID + "block." + AC_ID + "red_terracotta_shingles.desc", "Perfect for building roofs!");
+//        desc.add(YT_ID + "block." + AC_ID + "black_terracotta_shingles.desc", "Perfect for building roofs!");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "white_terracotta_shingle_stairs.desc", "Sliding off a roof would suck for your bones!");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_terracotta_shingle_stairs.desc", "Sliding off a roof would suck for your bones!");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_terracotta_shingle_stairs.desc", "Sliding off a roof would suck for your bones!");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_terracotta_shingle_stairs.desc", "Sliding off a roof would suck for your bones!");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_terracotta_shingle_stairs.desc", "Sliding off a roof would suck for your bones!");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_terracotta_shingle_stairs.desc", "Sliding off a roof would suck for your bones!");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_terracotta_shingle_stairs.desc", "Sliding off a roof would suck for your bones!");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_terracotta_shingle_stairs.desc", "Sliding off a roof would suck for your bones!");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_terracotta_shingle_stairs.desc", "Sliding off a roof would suck for your bones!");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_terracotta_shingle_stairs.desc", "Sliding off a roof would suck for your bones!");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_terracotta_shingle_stairs.desc", "Sliding off a roof would suck for your bones!");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_terracotta_shingle_stairs.desc", "Sliding off a roof would suck for your bones!");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_terracotta_shingle_stairs.desc", "Sliding off a roof would suck for your bones!");
+//        desc.add(YT_ID + "block." + AC_ID + "green_terracotta_shingle_stairs.desc", "Sliding off a roof would suck for your bones!");
+//        desc.add(YT_ID + "block." + AC_ID + "red_terracotta_shingle_stairs.desc", "Sliding off a roof would suck for your bones!");
+//        desc.add(YT_ID + "block." + AC_ID + "black_terracotta_shingle_stairs.desc", "Sliding off a roof would suck for your bones!");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "white_terracotta_shingle_slab.desc", "Perfect for adding more detail to your home");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_terracotta_shingle_slab.desc", "Perfect for adding more detail to your home");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_terracotta_shingle_slab.desc", "Perfect for adding more detail to your home");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_terracotta_shingle_slab.desc", "Perfect for adding more detail to your home");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_terracotta_shingle_slab.desc", "Perfect for adding more detail to your home");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_terracotta_shingle_slab.desc", "Perfect for adding more detail to your home");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_terracotta_shingle_slab.desc", "Perfect for adding more detail to your home");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_terracotta_shingle_slab.desc", "Perfect for adding more detail to your home");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_terracotta_shingle_slab.desc", "Perfect for adding more detail to your home");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_terracotta_shingle_slab.desc", "Perfect for adding more detail to your home");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_terracotta_shingle_slab.desc", "Perfect for adding more detail to your home");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_terracotta_shingle_slab.desc", "Perfect for adding more detail to your home");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_terracotta_shingle_slab.desc", "Perfect for adding more detail to your home");
+//        desc.add(YT_ID + "block." + AC_ID + "green_terracotta_shingle_slab.desc", "Perfect for adding more detail to your home");
+//        desc.add(YT_ID + "block." + AC_ID + "red_terracotta_shingle_slab.desc", "Perfect for adding more detail to your home");
+//        desc.add(YT_ID + "block." + AC_ID + "black_terracotta_shingle_slab.desc", "Perfect for adding more detail to your home");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "white_terracotta_shingle_wall.desc", "A wall held up by white terracotta shingles");
+//        desc.add(YT_ID + "block." + AC_ID + "orange_terracotta_shingle_wall.desc", "A wall held up by orange terracotta shingles");
+//        desc.add(YT_ID + "block." + AC_ID + "magenta_terracotta_shingle_wall.desc", "A wall held up by magenta terracotta shingles");
+//        desc.add(YT_ID + "block." + AC_ID + "light_blue_terracotta_shingle_wall.desc", "A wall held up by light blue terracotta shingles");
+//        desc.add(YT_ID + "block." + AC_ID + "yellow_terracotta_shingle_wall.desc", "A wall held up by yellow terracotta shingles");
+//        desc.add(YT_ID + "block." + AC_ID + "lime_terracotta_shingle_wall.desc", "A wall held up by lime terracotta shingles");
+//        desc.add(YT_ID + "block." + AC_ID + "pink_terracotta_shingle_wall.desc", "A wall held up by pink terracotta shingles");
+//        desc.add(YT_ID + "block." + AC_ID + "gray_terracotta_shingle_wall.desc", "A wall held up by gray terracotta shingles");
+//        desc.add(YT_ID + "block." + AC_ID + "light_gray_terracotta_shingle_wall.desc", "A wall held up by light gray terracotta shingles");
+//        desc.add(YT_ID + "block." + AC_ID + "cyan_terracotta_shingle_wall.desc", "A wall held up by cyan terracotta shingles");
+//        desc.add(YT_ID + "block." + AC_ID + "purple_terracotta_shingle_wall.desc", "A wall held up by purple terracotta shingles");
+//        desc.add(YT_ID + "block." + AC_ID + "blue_terracotta_shingle_wall.desc", "A wall held up by blue terracotta shingles");
+//        desc.add(YT_ID + "block." + AC_ID + "brown_terracotta_shingle_wall.desc", "A wall held up by brown terracotta shingles");
+//        desc.add(YT_ID + "block." + AC_ID + "green_terracotta_shingle_wall.desc", "A wall held up by green terracotta shingles");
+//        desc.add(YT_ID + "block." + AC_ID + "red_terracotta_shingle_wall.desc", "A wall held up by red terracotta shingles");
+//        desc.add(YT_ID + "block." + AC_ID + "black_terracotta_shingle_wall.desc", "A wall held up by black terracotta shingles");
+//
+//        desc.add(YT_ID + "block." + AC_ID + "terracotta_shingle_stairs.desc", "Sliding off a roof would suck for your bones!");
+//        desc.add(YT_ID + "block." + AC_ID + "terracotta_shingle_slab.desc", "Perfect for adding more detail to your home");
+//        desc.add(YT_ID + "block." + AC_ID + "terracotta_shingle_wall.desc", "A wall held up by terracotta shingles");
+//        desc.add(YT_ID + "block." + AC_ID + "terracotta_shingles.desc", "Perfect for building roofs!");
     }
 }

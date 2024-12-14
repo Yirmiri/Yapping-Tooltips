@@ -10,6 +10,10 @@ repositories {
     }
 }
 
+fabricApi {
+    configureDataGeneration()
+}
+
 dependencies {
     minecraft "com.mojang:minecraft:${minecraft_version}"
     mappings loom.layered {

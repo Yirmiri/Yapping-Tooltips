@@ -1,0 +1,4 @@
+/time set day
+/gamerule doMobSpawning false
+/gamerule doDaylightCycle false
+/gamerule doWeatherCycle false
