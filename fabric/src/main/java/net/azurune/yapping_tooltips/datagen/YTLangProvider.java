@@ -22,7 +22,8 @@ public class YTLangProvider extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(HolderLookup.Provider lookup, TranslationBuilder desc) {
-        desc.add(YT_ID + "more_information", "[%s] to show tooltip");
+        desc.add(YT_ID + "more_informationOld", "[%s] to show tooltip");
+        desc.add(YT_ID + "more_information", "[Shift] to show tooltip");
 
         //1.21 UPDATE
         desc.add(YT_ID + "item." + ID + "flow_armor_trim_smithing_template.desc", "A breeze rod tablet that can be used to trim armor");
