@@ -1382,7 +1382,7 @@ public class YTLangProvider extends FabricLanguageProvider {
         desc.add(YT_ID + "item." + ID + "green_dye.desc", "Let's paint the world §2Green§7!");
         desc.add(YT_ID + "item." + ID + "cyan_dye.desc", "Let's paint the world §3Cyan§7!");
         desc.add(YT_ID + "item." + ID + "light_blue_dye.desc", "Let's paint the world §bLight Blue§7!");
-        desc.add(YT_ID + "item." + ID + "blue_dye.desc", "Let's paint the world §9Blue§7!");
+        desc.add(YT_ID + "item." + ID + "blue_dye.desc", "Let's paint the town §9Blue§7!");
         desc.add(YT_ID + "item." + ID + "purple_dye.desc", "Let's paint the world §5Purple§7!");
         desc.add(YT_ID + "item." + ID + "magenta_dye.desc", "Let's paint the world §dMagenta§7!");
         desc.add(YT_ID + "item." + ID + "pink_dye.desc", "Let's paint the world §dPink§7!");

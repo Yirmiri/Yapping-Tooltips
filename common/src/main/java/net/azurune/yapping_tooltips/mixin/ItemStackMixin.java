@@ -33,11 +33,11 @@ public class ItemStackMixin {
                 //if sneak key is pressed or enableSneakToDisplay is false then display tooltip
                 if (InputConstants.isKeyDown(Minecraft.getInstance().getWindow().getWindow(), (Minecraft.getInstance().options.keyShift).getDefaultKey().getValue())) {
                     //|| !YTConfig.ENABLE_SNEAK_TO_DISPLAY.get()) { //TODO: Re-add im lazy and its 2am
-                    tooltip.add(1, Component.translatable(YappingTooltips.MOD_ID + "." + stack.getDescriptionId() + ".desc").withStyle(ChatFormatting.GOLD));
+                    tooltip.add(1, Component.translatable(YappingTooltips.MOD_ID + "." + stack.getDescriptionId() + ".desc").withStyle(ChatFormatting.GRAY));
 
                 } else {
                     tooltip.add(1, Component.translatable("yapping_tooltips.more_information",
-                            Component.translatable(Minecraft.getInstance().options.keyShift.saveString()).withStyle(ChatFormatting.GOLD))); //custom color config
+                            Component.translatable(Minecraft.getInstance().options.keyShift.saveString()).withStyle(ChatFormatting.GOLD)).withStyle(ChatFormatting.GOLD)); //custom color config
                 }
             }
         }
