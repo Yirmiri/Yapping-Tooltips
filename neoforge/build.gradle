@@ -3,6 +3,10 @@ plugins {
     id 'net.neoforged.moddev'
 }
 
+base {
+    archivesName = "${mod_name}-neoforge-${minecraft_version}"
+}
+
 neoForge {
     version = neoforge_version
     // Automatically enable neoforge AccessTransformers if the file exists
@@ -41,4 +45,4 @@ dependencies {
     //compileOnly project(":common")
 }
 
-sourceSets.main.resources { srcDir 'src/generated/resources' }
+sourceSets.main.resources { srcDir project(":common").file('src/main/generated/').getAbsolutePath() }
