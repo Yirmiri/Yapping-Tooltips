@@ -1392,7 +1392,7 @@ public class YTLangProvider extends FabricLanguageProvider {
         desc.add(YT_ID + "item." + ID + "nether_brick.desc", "A warm brick that can be put together to create a block");
         desc.add(YT_ID + "item." + ID + "paper.desc", "Beware of paper cuts!");
         desc.add(YT_ID + "item." + ID + "book.desc", "Leather and paper that awaits being written in");
-        desc.add(YT_ID + "item." + ID + "glass_bottle.desc", "\"The drink is all this man ever was. And when it's gone, what remains is the bottle.\"");
+        desc.add(YT_ID + "item." + ID + "glass_bottle.desc", "\"The drink is all this man ever was.\"");
 
         desc.add(YT_ID + "item." + ID + "glowstone_dust.desc", "A glowing pile of dust that of which can empower potions");
         desc.add(YT_ID + "item." + ID + "gunpowder.desc", "A gray powder that can cause explosions");
